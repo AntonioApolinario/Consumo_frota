@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardFacade } from './facades/dashboard.facade';
 import { KpiCardComponent } from './components/kpi-card.component';
+import { PriceEvolutionChartComponent } from './components/price-evolution-chart.component';
+import { RegionConsumptionChartComponent } from './components/region-consumption-chart.component';
 import { LoadingSpinnerComponent, ErrorMessageComponent } from '../../shared';
 
 @Component({
@@ -10,6 +12,8 @@ import { LoadingSpinnerComponent, ErrorMessageComponent } from '../../shared';
   imports: [
     CommonModule, 
     KpiCardComponent, 
+    PriceEvolutionChartComponent,
+    RegionConsumptionChartComponent,
     LoadingSpinnerComponent, 
     ErrorMessageComponent
   ],
@@ -61,9 +65,9 @@ import { LoadingSpinnerComponent, ErrorMessageComponent } from '../../shared';
         </app-kpi-card>
       </div>
 
-      <div *ngIf="facade.kpiData$ | async" class="bg-white rounded-lg shadow-md p-6">
-        <h2 class="text-h3 font-semibold text-gov-blue mb-4">Gráficos</h2>
-        <p class="text-gov-gray-8">Gráficos de evolução e consumo por região serão implementados na próxima etapa.</p>
+      <div *ngIf="facade.kpiData$ | async" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <app-price-evolution-chart></app-price-evolution-chart>
+        <app-region-consumption-chart></app-region-consumption-chart>
       </div>
     </div>
   `

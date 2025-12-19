@@ -75,10 +75,36 @@ export class ConsultaFacade {
 
   private aplicarFiltros(abastecimentos: Abastecimento[], filtros: FiltrosConsulta): Abastecimento[] {
     return abastecimentos.filter(a => {
-      if (filtros.uf && a.uf !== filtros.uf) return false;
-      if (filtros.tipoCombustivel && a.tipoCombustivel !== filtros.tipoCombustivel) return false;
-      if (filtros.dataInicio && new Date(a.data) < new Date(filtros.dataInicio)) return false;
-      if (filtros.dataFim && new Date(a.data) > new Date(filtros.dataFim)) return false;
+      // Filtro por UF (ignorar se vazio ou undefined)
+      if (filtros.uf && filtros.uf.trim() !== '' && a.uf !== filtros.uf) {
+        return false;
+      }
+      
+      // Filtro por tipo de combustível (ignorar se vazio ou undefined)
+      if (filtros.tipoCombustivel && filtros.tipoCombustivel.trim() !== '' && a.tipoCombustivel !== filtros.tipoCombustivel) {
+        return false;
+      }
+      
+      // Filtro por data inicial
+      if (filtros.dataInicio && filtros.dataInicio.trim() !== '') {
+        const dataAbastecimento = new Date(a.data);
+        const dataInicio = new Date(filtros.dataInicio);
+        dataInicio.setHours(0, 0, 0, 0);
+        if (dataAbastecimento < dataInicio) {
+          return false;
+        }
+      }
+      
+      // Filtro por data final
+      if (filtros.dataFim && filtros.dataFim.trim() !== '') {
+        const dataAbastecimento = new Date(a.data);
+        const dataFim = new Date(filtros.dataFim);
+        dataFim.setHours(23, 59, 59, 999);
+        if (dataAbastecimento > dataFim) {
+          return false;
+        }
+      }
+      
       return true;
     });
   }

@@ -6,7 +6,10 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <div class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded relative" role="alert">
+    <div class="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded relative" 
+         role="alert"
+         aria-live="assertive"
+         aria-atomic="true">
       <strong class="font-bold">Erro: </strong>
       <span class="block sm:inline">{{ message }}</span>
     </div>

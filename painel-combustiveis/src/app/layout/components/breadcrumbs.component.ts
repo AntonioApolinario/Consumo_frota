@@ -7,16 +7,18 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    <nav aria-label="breadcrumb" class="bg-gov-gray-80 border-b border-gov-gray-20">
+    <nav aria-label="Breadcrumb - caminho da página" class="bg-gov-gray-80 border-b border-gov-gray-20">
       <div class="container mx-auto px-4 py-3">
         <ol class="flex gap-2 text-sm text-gov-gray-8">
           <li>
-            <a routerLink="/" class="hover:underline focus:outline-none focus:ring-2 focus:ring-gov-blue">
+            <a routerLink="/" 
+               class="hover:underline focus:outline-none focus:ring-2 focus:ring-gov-blue"
+               aria-label="Voltar para a página inicial">
               Home
             </a>
           </li>
           <li aria-hidden="true" class="text-gov-gray-20">/</li>
-          <li>
+          <li aria-current="page">
             <span class="text-gov-gray-2 font-medium">Combustíveis</span>
           </li>
         </ol>

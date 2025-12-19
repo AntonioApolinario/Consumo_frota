@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit, OnDestroy, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Abastecimento } from '../models/consulta.models';
 import { CpfMaskPipe, PlacaMaskPipe, CurrencyBrPipe } from '../../../shared';
@@ -10,17 +10,25 @@ import { CpfMaskPipe, PlacaMaskPipe, CurrencyBrPipe } from '../../../shared';
   template: `
     <div *ngIf="abastecimento" 
          class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
-         (click)="fechar()">
-      <div class="bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
-           (click)="$event.stopPropagation()">
+         (click)="fechar()"
+         (keydown.escape)="fechar()"
+         role="dialog"
+         aria-modal="true"
+         aria-labelledby="modal-title">
+      <div #modalContent
+           class="bg-white rounded-lg shadow-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+           (click)="$event.stopPropagation()"
+           tabindex="-1">
         
         <!-- Header -->
         <div class="bg-gov-blue text-white px-6 py-4 flex items-center justify-between rounded-t-lg">
-          <h2 class="text-h3 font-semibold">Detalhes do Abastecimento</h2>
+          <h2 id="modal-title" class="text-h3 font-semibold">Detalhes do Abastecimento</h2>
           <button 
+            #closeButton
             (click)="fechar()"
             class="text-white hover:text-gov-gray-80 text-2xl leading-none"
-            aria-label="Fechar">
+            aria-label="Fechar modal"
+            type="button">
             ×
           </button>
         </div>
@@ -29,8 +37,8 @@ import { CpfMaskPipe, PlacaMaskPipe, CurrencyBrPipe } from '../../../shared';
         <div class="p-6 space-y-6">
           
           <!-- Informações do Abastecimento -->
-          <div>
-            <h3 class="text-lg font-semibold text-gov-blue mb-3">Informações do Abastecimento</h3>
+          <div role="region" aria-labelledby="info-abastecimento">
+            <h3 id="info-abastecimento" class="text-lg font-semibold text-gov-blue mb-3">Informações do Abastecimento</h3>
             <div class="grid grid-cols-2 gap-4">
               <div>
                 <label class="text-sm font-medium text-gov-gray-8">Data e Hora</label>
@@ -66,8 +74,8 @@ import { CpfMaskPipe, PlacaMaskPipe, CurrencyBrPipe } from '../../../shared';
           <hr class="border-gov-gray-20">
 
           <!-- Informações do Motorista -->
-          <div>
-            <h3 class="text-lg font-semibold text-gov-blue mb-3">Motorista</h3>
+          <div role="region" aria-labelledby="info-motorista">
+            <h3 id="info-motorista" class="text-lg font-semibold text-gov-blue mb-3">Motorista</h3>
             <div class="grid grid-cols-2 gap-4">
               <div>
                 <label class="text-sm font-medium text-gov-gray-8">Nome</label>
@@ -83,8 +91,8 @@ import { CpfMaskPipe, PlacaMaskPipe, CurrencyBrPipe } from '../../../shared';
           <hr class="border-gov-gray-20">
 
           <!-- Informações do Veículo -->
-          <div>
-            <h3 class="text-lg font-semibold text-gov-blue mb-3">Veículo</h3>
+          <div role="region" aria-labelledby="info-veiculo">
+            <h3 id="info-veiculo" class="text-lg font-semibold text-gov-blue mb-3">Veículo</h3>
             <div class="grid grid-cols-2 gap-4">
               <div>
                 <label class="text-sm font-medium text-gov-gray-8">Placa</label>
@@ -103,12 +111,16 @@ import { CpfMaskPipe, PlacaMaskPipe, CurrencyBrPipe } from '../../../shared';
         <div class="bg-gov-gray-80 px-6 py-4 flex justify-between items-center rounded-b-lg">
           <button 
             (click)="reportarErro()"
-            class="px-6 py-2 bg-gov-yellow text-gov-gray-2 font-semibold rounded hover:bg-yellow-500 transition-colors">
+            class="px-6 py-2 bg-gov-yellow text-gov-gray-2 font-semibold rounded hover:bg-yellow-500 transition-colors"
+            type="button"
+            aria-label="Reportar erro neste abastecimento">
             Reportar Erro
           </button>
           <button 
             (click)="fechar()"
-            class="px-6 py-2 bg-gov-gray-20 text-gov-gray-2 rounded hover:bg-gov-gray-8 hover:text-white transition-colors">
+            class="px-6 py-2 bg-gov-gray-20 text-gov-gray-2 rounded hover:bg-gov-gray-8 hover:text-white transition-colors"
+            type="button"
+            aria-label="Fechar modal">
             Fechar
           </button>
         </div>
@@ -117,9 +129,59 @@ import { CpfMaskPipe, PlacaMaskPipe, CurrencyBrPipe } from '../../../shared';
     </div>
   `
 })
-export class DetalheRegistroComponent {
+export class DetalheRegistroComponent implements OnInit, OnDestroy {
   @Input() abastecimento: Abastecimento | null = null;
   @Output() close = new EventEmitter<void>();
+  @ViewChild('modalContent') modalContent!: ElementRef;
+  @ViewChild('closeButton') closeButton!: ElementRef;
+  
+  private previousActiveElement: HTMLElement | null = null;
+
+  ngOnInit(): void {
+    // Salvar elemento com foco anterior
+    this.previousActiveElement = document.activeElement as HTMLElement;
+    
+    // Focar no modal após render
+    setTimeout(() => {
+      this.closeButton?.nativeElement?.focus();
+    }, 100);
+
+    // Trap de foco no modal
+    document.addEventListener('keydown', this.handleTabKey);
+  }
+
+  ngOnDestroy(): void {
+    // Remover listener
+    document.removeEventListener('keydown', this.handleTabKey);
+    
+    // Restaurar foco ao elemento anterior
+    this.previousActiveElement?.focus();
+  }
+
+  private handleTabKey = (event: KeyboardEvent): void => {
+    if (event.key !== 'Tab') return;
+
+    const focusableElements = this.modalContent?.nativeElement.querySelectorAll(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+
+    if (!focusableElements || focusableElements.length === 0) return;
+
+    const firstElement = focusableElements[0] as HTMLElement;
+    const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
+
+    if (event.shiftKey) {
+      if (document.activeElement === firstElement) {
+        lastElement.focus();
+        event.preventDefault();
+      }
+    } else {
+      if (document.activeElement === lastElement) {
+        firstElement.focus();
+        event.preventDefault();
+      }
+    }
+  };
 
   fechar(): void {
     this.close.emit();

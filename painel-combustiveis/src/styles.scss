@@ -3,3 +3,134 @@
 @tailwind utilities;
 
 /* Estilos globais SCSS */
+
+/* Alto Contraste - WCAG AAA */
+body.high-contrast {
+  background-color: #000 !important;
+  color: #fff !important;
+
+  /* Textos e links */
+  h1, h2, h3, h4, h5, h6, p, span, div, li, td, th, label {
+    color: #fff !important;
+  }
+
+  a {
+    color: #ffff00 !important;
+    text-decoration: underline !important;
+    
+    &:hover, &:focus {
+      color: #ffdd00 !important;
+      background-color: #333 !important;
+    }
+  }
+
+  /* Botões */
+  button, .btn {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 2px solid #fff !important;
+    
+    &:hover, &:focus {
+      background-color: #ffff00 !important;
+      color: #000 !important;
+      border-color: #ffff00 !important;
+    }
+  }
+
+  /* Inputs */
+  input, select, textarea {
+    background-color: #fff !important;
+    color: #000 !important;
+    border: 2px solid #fff !important;
+  }
+
+  /* Cards e containers */
+  .bg-white, .bg-gray-50, .bg-gray-100 {
+    background-color: #1a1a1a !important;
+    border: 1px solid #fff !important;
+  }
+
+  /* Header e menu */
+  header, nav {
+    background-color: #000 !important;
+    border-bottom: 2px solid #fff !important;
+  }
+
+  /* Tabelas */
+  table {
+    border: 2px solid #fff !important;
+    
+    thead {
+      background-color: #333 !important;
+      border-bottom: 2px solid #fff !important;
+    }
+    
+    tbody tr {
+      border-bottom: 1px solid #666 !important;
+      
+      &:hover {
+        background-color: #333 !important;
+      }
+    }
+  }
+
+  /* Modal */
+  .bg-black {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+  }
+
+  /* Charts - fundos */
+  canvas {
+    filter: invert(1) hue-rotate(180deg);
+  }
+
+  /* Ícones e SVG */
+  svg, img {
+    filter: invert(1);
+  }
+}
+
+/* Estilos de foco visível - acessibilidade */
+*:focus-visible {
+  outline: 3px solid #1351B4 !important;
+  outline-offset: 2px !important;
+}
+
+body.high-contrast *:focus-visible {
+  outline: 3px solid #ffff00 !important;
+  outline-offset: 2px !important;
+}
+
+/* Skip links */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #1351B4;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+  
+  &:focus {
+    top: 0;
+  }
+}
+
+/* Screen reader only - oculta visualmente mas mantém acessível */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Animações suaves para transições */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}

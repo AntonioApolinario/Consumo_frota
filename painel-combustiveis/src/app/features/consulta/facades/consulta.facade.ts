@@ -29,17 +29,24 @@ export class ConsultaFacade {
   ]).pipe(
     map(([abastecimentos, filtros, paginacao]) => {
       let filtrados = this.aplicarFiltros(abastecimentos, filtros);
-      
-      const paginacaoAtualizada = {
-        ...paginacao,
-        totalItens: filtrados.length
-      };
-      this.paginacaoSubject.next(paginacaoAtualizada);
 
       const inicio = (paginacao.paginaAtual - 1) * paginacao.itensPorPagina;
       const fim = inicio + paginacao.itensPorPagina;
       
-      return filtrados.slice(inicio, fim);
+      const resultado = filtrados.slice(inicio, fim);
+      
+      // Atualizar totalItens de forma assíncrona para evitar loop
+      setTimeout(() => {
+        const paginacaoAtual = this.paginacaoSubject.value;
+        if (paginacaoAtual.totalItens !== filtrados.length) {
+          this.paginacaoSubject.next({
+            ...paginacaoAtual,
+            totalItens: filtrados.length
+          });
+        }
+      });
+      
+      return resultado;
     })
   );
 
@@ -51,6 +58,7 @@ export class ConsultaFacade {
 
     this.consultaService.getAbastecimentos().pipe(
       catchError(error => {
+        console.error('Erro ao carregar abastecimentos:', error);
         this.errorSubject.next('Erro ao carregar abastecimentos');
         return of([]);
       })

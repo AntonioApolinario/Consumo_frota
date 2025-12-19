@@ -109,7 +109,7 @@ export class ConsultaComponent implements OnInit {
   }
 
   aplicarFiltros(filtros: FiltrosConsulta): void {
-    this.facade.aplicarFiltros(filtros);
+    this.facade.aplicarFiltro(filtros);
   }
 
   fecharDetalhes(): void {

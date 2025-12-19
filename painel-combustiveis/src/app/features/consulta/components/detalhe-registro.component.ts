@@ -1,5 +1,5 @@
-import { Component, Input, Output, EventEmitter, OnInit, OnDestroy, ElementRef, ViewChild } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Component, Input, Output, EventEmitter, OnInit, OnDestroy, ElementRef, ViewChild, PLATFORM_ID, Inject } from '@angular/core';
+import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Abastecimento } from '../models/consulta.models';
 import { CpfMaskPipe, PlacaMaskPipe, CurrencyBrPipe } from '../../../shared';
 
@@ -136,8 +136,15 @@ export class DetalheRegistroComponent implements OnInit, OnDestroy {
   @ViewChild('closeButton') closeButton!: ElementRef;
   
   private previousActiveElement: HTMLElement | null = null;
+  private isBrowser: boolean;
+
+  constructor(@Inject(PLATFORM_ID) platformId: object) {
+    this.isBrowser = isPlatformBrowser(platformId);
+  }
 
   ngOnInit(): void {
+    if (!this.isBrowser) return;
+
     // Salvar elemento com foco anterior
     this.previousActiveElement = document.activeElement as HTMLElement;
     
@@ -151,6 +158,8 @@ export class DetalheRegistroComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    if (!this.isBrowser) return;
+
     // Remover listener
     document.removeEventListener('keydown', this.handleTabKey);
     
@@ -159,7 +168,7 @@ export class DetalheRegistroComponent implements OnInit, OnDestroy {
   }
 
   private handleTabKey = (event: KeyboardEvent): void => {
-    if (event.key !== 'Tab') return;
+    if (!this.isBrowser || event.key !== 'Tab') return;
 
     const focusableElements = this.modalContent?.nativeElement.querySelectorAll(
       'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'

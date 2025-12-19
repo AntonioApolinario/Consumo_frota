@@ -1,0 +1,61 @@
+{
+  "abastecimentos": [
+    {
+      "id": 1,
+      "data": "2025-11-15T10:30:00",
+      "posto": "Posto Ipiranga Centro",
+      "cidade": "Brasília",
+      "uf": "DF",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.89,
+      "litros": 45.5,
+      "totalPago": 267.99,
+      "motorista": {
+        "nome": "João da Silva",
+        "cpf": "123.456.789-00"
+      },
+      "veiculo": {
+        "placa": "ABC-1234",
+        "modelo": "Fiat Uno"
+      }
+    },
+    {
+      "id": 2,
+      "data": "2025-11-14T14:20:00",
+      "posto": "Shell Asa Sul",
+      "cidade": "Brasília",
+      "uf": "DF",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.25,
+      "litros": 80.0,
+      "totalPago": 500.00,
+      "motorista": {
+        "nome": "Maria Santos",
+        "cpf": "987.654.321-00"
+      },
+      "veiculo": {
+        "placa": "XYZ-5678",
+        "modelo": "Mercedes Sprinter"
+      }
+    },
+    {
+      "id": 3,
+      "data": "2025-11-13T08:45:00",
+      "posto": "BR Petrobras",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "tipoCombustivel": "Etanol",
+      "valorLitro": 3.99,
+      "litros": 35.0,
+      "totalPago": 139.65,
+      "motorista": {
+        "nome": "Pedro Oliveira",
+        "cpf": "456.789.123-00"
+      },
+      "veiculo": {
+        "placa": "DEF-9012",
+        "modelo": "Volkswagen Gol"
+      }
+    }
+  ]
+}

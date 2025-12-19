@@ -1,0 +1,32 @@
+services:
+  angular:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: painel-combustiveis-dev
+    working_dir: /app
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    ports:
+      - "4200:4200"
+    stdin_open: true
+    tty: true
+    networks:
+      - app-network
+
+  api:
+    image: node:20-alpine
+    container_name: painel-combustiveis-api
+    working_dir: /app
+    volumes:
+      - ./api:/app
+    ports:
+      - "3000:3000"
+    command: sh -c "npm install -g json-server && json-server --watch db.json --host 0.0.0.0 --port 3000"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

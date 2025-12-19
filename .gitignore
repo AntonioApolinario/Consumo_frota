@@ -1,0 +1,47 @@
+# Documentação PDF
+*.pdf
+
+# Dependências
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# Build e cache
+dist/
+.angular/
+/tmp
+/out-tsc
+/bazel-out
+
+# Testes
+coverage/
+*.coverage
+.nyc_output
+__screenshots__/
+
+# IDEs e editores
+.vscode/
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.history/
+
+# Logs
+*.log
+logs/
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Temporários
+*.tmp
+*.temp
+*.swp
+*.swo
+*~

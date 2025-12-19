@@ -1,61 +1,4004 @@
 {
   "abastecimentos": [
     {
+      "id": 182,
+      "data": "2025-12-18T11:19:22",
+      "posto": "BR Mania",
+      "cidade": "Feira de Santana",
+      "uf": "BA",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.8,
+      "litros": 111.2,
+      "totalPago": 756.16,
+      "motorista": {
+        "nome": "João da Silva",
+        "cpf": "180.959.375-62"
+      },
+      "veiculo": {
+        "placa": "HBC-0O69",
+        "modelo": "Scania R450"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 188,
+      "data": "2025-12-18T04:45:22",
+      "posto": "Shell Avenida",
+      "cidade": "Caracaraí",
+      "uf": "RR",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.45,
+      "litros": 75.6,
+      "totalPago": 487.62,
+      "motorista": {
+        "nome": "Camila Martins",
+        "cpf": "557.372.646-42"
+      },
+      "veiculo": {
+        "placa": "KVN-0K51",
+        "modelo": "Mercedes Sprinter"
+      },
+      "regiao": "Norte"
+    },
+    {
       "id": 1,
-      "data": "2025-11-15T10:30:00",
+      "data": "2025-12-18T00:04:22",
+      "posto": "Posto Rodoviário",
+      "cidade": "Juazeiro do Norte",
+      "uf": "CE",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.56,
+      "litros": 100.3,
+      "totalPago": 657.97,
+      "motorista": {
+        "nome": "João da Silva",
+        "cpf": "908.887.735-45"
+      },
+      "veiculo": {
+        "placa": "ZVS-7I40",
+        "modelo": "Mercedes Sprinter"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 162,
+      "data": "2025-12-17T06:02:22",
+      "posto": "BR Express",
+      "cidade": "Nossa Senhora do Socorro",
+      "uf": "SE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.77,
+      "litros": 26.4,
+      "totalPago": 152.33,
+      "motorista": {
+        "nome": "Diego Castro",
+        "cpf": "534.763.821-75"
+      },
+      "veiculo": {
+        "placa": "FVN-3N39",
+        "modelo": "Honda Civic"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 196,
+      "data": "2025-12-16T11:45:22",
+      "posto": "Posto Ale",
+      "cidade": "Contagem",
+      "uf": "MG",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.05,
+      "litros": 54.1,
+      "totalPago": 327.31,
+      "motorista": {
+        "nome": "Silvia Torres",
+        "cpf": "790.444.137-68"
+      },
+      "veiculo": {
+        "placa": "PEH-3E47",
+        "modelo": "Fiat Argo"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 31,
+      "data": "2025-12-15T05:50:22",
+      "posto": "Shell Asa Sul",
+      "cidade": "Marabá",
+      "uf": "PA",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.15,
+      "litros": 137.4,
+      "totalPago": 845.01,
+      "motorista": {
+        "nome": "Vanessa Correia",
+        "cpf": "477.833.276-57"
+      },
+      "veiculo": {
+        "placa": "BZL-3T77",
+        "modelo": "Scania R450"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 79,
+      "data": "2025-12-13T21:03:22",
+      "posto": "BR Express",
+      "cidade": "Nossa Senhora do Socorro",
+      "uf": "SE",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.24,
+      "litros": 124.1,
+      "totalPago": 774.38,
+      "motorista": {
+        "nome": "Diego Castro",
+        "cpf": "334.587.734-93"
+      },
+      "veiculo": {
+        "placa": "DDZ-8K53",
+        "modelo": "Volvo FH"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 152,
+      "data": "2025-12-13T12:45:22",
       "posto": "Posto Ipiranga Centro",
+      "cidade": "Maceió",
+      "uf": "AL",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.99,
+      "litros": 45.2,
+      "totalPago": 270.75,
+      "motorista": {
+        "nome": "Aline Duarte",
+        "cpf": "307.201.368-18"
+      },
+      "veiculo": {
+        "placa": "GFY-9E35",
+        "modelo": "Jeep Compass"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 184,
+      "data": "2025-12-12T22:36:22",
+      "posto": "Total Combustíveis",
+      "cidade": "Cruzeiro do Sul",
+      "uf": "AC",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.62,
+      "litros": 128.6,
+      "totalPago": 851.33,
+      "motorista": {
+        "nome": "Paulo Rodrigues",
+        "cpf": "540.445.336-87"
+      },
+      "veiculo": {
+        "placa": "YCM-8R89",
+        "modelo": "Mercedes Sprinter"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 51,
+      "data": "2025-12-12T03:20:22",
+      "posto": "Shell Asa Sul",
+      "cidade": "Goiânia",
+      "uf": "GO",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.23,
+      "litros": 136.2,
+      "totalPago": 848.53,
+      "motorista": {
+        "nome": "Mariana Freitas",
+        "cpf": "307.451.477-78"
+      },
+      "veiculo": {
+        "placa": "PLS-5Q87",
+        "modelo": "Mercedes Sprinter"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 94,
+      "data": "2025-12-12T02:45:22",
+      "posto": "Posto Rodoanel",
+      "cidade": "Recife",
+      "uf": "PE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.94,
+      "litros": 36.7,
+      "totalPago": 218.0,
+      "motorista": {
+        "nome": "Mariana Freitas",
+        "cpf": "954.734.737-95"
+      },
+      "veiculo": {
+        "placa": "RUF-9G81",
+        "modelo": "Ford Ka"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 74,
+      "data": "2025-12-12T00:32:22",
+      "posto": "BR Mania",
+      "cidade": "Recife",
+      "uf": "PE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.76,
+      "litros": 44.8,
+      "totalPago": 258.05,
+      "motorista": {
+        "nome": "Juliana Alves",
+        "cpf": "892.991.370-76"
+      },
+      "veiculo": {
+        "placa": "JND-8F16",
+        "modelo": "Fiat Argo"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 129,
+      "data": "2025-12-11T10:17:22",
+      "posto": "Posto Ale",
+      "cidade": "Vitória",
+      "uf": "ES",
+      "tipoCombustivel": "Etanol",
+      "valorLitro": 3.64,
+      "litros": 39.1,
+      "totalPago": 142.32,
+      "motorista": {
+        "nome": "Patricia Nascimento",
+        "cpf": "810.485.396-32"
+      },
+      "veiculo": {
+        "placa": "GOV-6S12",
+        "modelo": "Volkswagen Gol"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 155,
+      "data": "2025-12-10T10:39:22",
+      "posto": "Shell Select",
+      "cidade": "Patos",
+      "uf": "PB",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.64,
+      "litros": 75.5,
+      "totalPago": 501.32,
+      "motorista": {
+        "nome": "Carolina Azevedo",
+        "cpf": "234.269.986-80"
+      },
+      "veiculo": {
+        "placa": "HYL-9T47",
+        "modelo": "Iveco Daily"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 190,
+      "data": "2025-12-10T08:33:22",
+      "posto": "Posto Rodoanel",
+      "cidade": "Santa Rita",
+      "uf": "PB",
+      "tipoCombustivel": "Etanol",
+      "valorLitro": 3.6,
+      "litros": 25.8,
+      "totalPago": 92.88,
+      "motorista": {
+        "nome": "Fábio Barros",
+        "cpf": "271.720.904-88"
+      },
+      "veiculo": {
+        "placa": "NYW-3H41",
+        "modelo": "Volkswagen Gol"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 8,
+      "data": "2025-12-10T06:32:22",
+      "posto": "Total Combustíveis",
+      "cidade": "Imperatriz",
+      "uf": "MA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.74,
+      "litros": 53.6,
+      "totalPago": 307.66,
+      "motorista": {
+        "nome": "Ana Costa",
+        "cpf": "540.936.589-56"
+      },
+      "veiculo": {
+        "placa": "NFZ-8D29",
+        "modelo": "Jeep Compass"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 137,
+      "data": "2025-12-08T01:39:22",
+      "posto": "Shell Select",
+      "cidade": "São Gonçalo",
+      "uf": "RJ",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.27,
+      "litros": 68.4,
+      "totalPago": 428.87,
+      "motorista": {
+        "nome": "Felipe Araújo",
+        "cpf": "738.764.160-57"
+      },
+      "veiculo": {
+        "placa": "BNR-1Z55",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 106,
+      "data": "2025-12-07T05:34:22",
+      "posto": "Posto Centro",
+      "cidade": "Contagem",
+      "uf": "MG",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.79,
+      "litros": 39.8,
+      "totalPago": 230.44,
+      "motorista": {
+        "nome": "Carlos Ferreira",
+        "cpf": "405.474.746-29"
+      },
+      "veiculo": {
+        "placa": "FCB-2U65",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 40,
+      "data": "2025-12-07T02:45:22",
+      "posto": "Ipiranga Box",
+      "cidade": "Imperatriz",
+      "uf": "MA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.46,
+      "litros": 32.5,
+      "totalPago": 177.45,
+      "motorista": {
+        "nome": "Carlos Ferreira",
+        "cpf": "281.376.395-28"
+      },
+      "veiculo": {
+        "placa": "MTE-0X49",
+        "modelo": "Ford Ka"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 64,
+      "data": "2025-12-07T01:12:22",
+      "posto": "Ipiranga Auto Posto",
+      "cidade": "Maceió",
+      "uf": "AL",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.5,
+      "litros": 32.4,
+      "totalPago": 210.6,
+      "motorista": {
+        "nome": "Juliana Alves",
+        "cpf": "166.415.166-26"
+      },
+      "veiculo": {
+        "placa": "KWB-4K46",
+        "modelo": "Fiat Uno"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 147,
+      "data": "2025-12-06T08:23:22",
+      "posto": "Ipiranga Box",
       "cidade": "Brasília",
+      "uf": "DF",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 7.07,
+      "litros": 126.3,
+      "totalPago": 892.94,
+      "motorista": {
+        "nome": "Priscila Moura",
+        "cpf": "559.864.740-25"
+      },
+      "veiculo": {
+        "placa": "RXN-5M68",
+        "modelo": "Mercedes Sprinter"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 101,
+      "data": "2025-12-06T07:49:22",
+      "posto": "Shell Express",
+      "cidade": "Patos",
+      "uf": "PB",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.92,
+      "litros": 141.5,
+      "totalPago": 979.18,
+      "motorista": {
+        "nome": "Bruno Dias",
+        "cpf": "600.446.707-90"
+      },
+      "veiculo": {
+        "placa": "NOU-5T97",
+        "modelo": "Fiat Toro"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 24,
+      "data": "2025-12-06T02:24:22",
+      "posto": "Shell Avenida",
+      "cidade": "Timon",
+      "uf": "MA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.56,
+      "litros": 53.3,
+      "totalPago": 296.35,
+      "motorista": {
+        "nome": "Vanessa Correia",
+        "cpf": "211.465.396-99"
+      },
+      "veiculo": {
+        "placa": "TLI-8T81",
+        "modelo": "Fiat Uno"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 12,
+      "data": "2025-12-05T08:32:22",
+      "posto": "BR Mania",
+      "cidade": "Serra",
+      "uf": "ES",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.48,
+      "litros": 123.7,
+      "totalPago": 801.58,
+      "motorista": {
+        "nome": "Fernando Neves",
+        "cpf": "578.753.387-45"
+      },
+      "veiculo": {
+        "placa": "NAR-6G12",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 151,
+      "data": "2025-12-05T01:23:22",
+      "posto": "Posto Ipiranga Centro",
+      "cidade": "Belo Horizonte",
+      "uf": "MG",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.6,
+      "litros": 80.3,
+      "totalPago": 529.98,
+      "motorista": {
+        "nome": "Rafael Gomes",
+        "cpf": "345.732.937-80"
+      },
+      "veiculo": {
+        "placa": "OAR-8F59",
+        "modelo": "Ford Cargo"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 128,
+      "data": "2025-12-04T22:37:22",
+      "posto": "Posto Rodoviário",
+      "cidade": "Cuiabá",
+      "uf": "MT",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.72,
+      "litros": 141.3,
+      "totalPago": 949.54,
+      "motorista": {
+        "nome": "Larissa Ribeiro",
+        "cpf": "832.270.220-75"
+      },
+      "veiculo": {
+        "placa": "EPY-9P25",
+        "modelo": "Volvo FH"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 136,
+      "data": "2025-12-04T10:27:22",
+      "posto": "Total Combustíveis",
+      "cidade": "Caracaraí",
+      "uf": "RR",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.09,
+      "litros": 86.1,
+      "totalPago": 524.35,
+      "motorista": {
+        "nome": "Ana Costa",
+        "cpf": "467.918.900-21"
+      },
+      "veiculo": {
+        "placa": "DYV-2R64",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 22,
+      "data": "2025-12-02T21:28:22",
+      "posto": "BR Mania",
+      "cidade": "Lagarto",
+      "uf": "SE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.26,
+      "litros": 39.1,
+      "totalPago": 244.77,
+      "motorista": {
+        "nome": "Diego Castro",
+        "cpf": "173.419.760-76"
+      },
+      "veiculo": {
+        "placa": "KLB-5K22",
+        "modelo": "Chevrolet Onix"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 26,
+      "data": "2025-12-02T07:25:22",
+      "posto": "Shell Asa Sul",
+      "cidade": "Salvador",
+      "uf": "BA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.46,
+      "litros": 34.5,
+      "totalPago": 222.87,
+      "motorista": {
+        "nome": "João da Silva",
+        "cpf": "373.489.835-15"
+      },
+      "veiculo": {
+        "placa": "NXF-0F79",
+        "modelo": "Fiat Uno"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 102,
+      "data": "2025-12-02T07:13:22",
+      "posto": "BR Express",
+      "cidade": "Porto Nacional",
+      "uf": "TO",
+      "tipoCombustivel": "Etanol",
+      "valorLitro": 3.94,
+      "litros": 46.3,
+      "totalPago": 182.42,
+      "motorista": {
+        "nome": "Amanda Rocha",
+        "cpf": "253.588.408-78"
+      },
+      "veiculo": {
+        "placa": "HQB-4I86",
+        "modelo": "Volkswagen Gol"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 19,
+      "data": "2025-12-02T03:39:22",
+      "posto": "BR Express",
+      "cidade": "João Pessoa",
+      "uf": "PB",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 7.03,
+      "litros": 118.1,
+      "totalPago": 830.24,
+      "motorista": {
+        "nome": "Marcelo Pinto",
+        "cpf": "578.707.731-70"
+      },
+      "veiculo": {
+        "placa": "XTL-7K32",
+        "modelo": "Ford Cargo"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 35,
+      "data": "2025-11-28T12:55:22",
+      "posto": "Petrobras BR",
+      "cidade": "Tarauacá",
+      "uf": "AC",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.39,
+      "litros": 25.9,
+      "totalPago": 139.6,
+      "motorista": {
+        "nome": "Fernanda Lima",
+        "cpf": "234.586.372-35"
+      },
+      "veiculo": {
+        "placa": "MZN-0K30",
+        "modelo": "Chevrolet Tracker"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 134,
+      "data": "2025-11-28T05:57:22",
+      "posto": "BR Mania",
+      "cidade": "Arapiraca",
+      "uf": "AL",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.2,
+      "litros": 52.0,
+      "totalPago": 270.4,
+      "motorista": {
+        "nome": "Natalia Rezende",
+        "cpf": "224.625.384-59"
+      },
+      "veiculo": {
+        "placa": "UHU-2X88",
+        "modelo": "Renault Kwid"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 50,
+      "data": "2025-11-26T12:16:22",
+      "posto": "Posto Rodoanel",
+      "cidade": "Rondonópolis",
+      "uf": "MT",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.6,
+      "litros": 129.9,
+      "totalPago": 857.34,
+      "motorista": {
+        "nome": "Roberto Teixeira",
+        "cpf": "250.213.236-41"
+      },
+      "veiculo": {
+        "placa": "YZR-2D42",
+        "modelo": "Fiat Toro"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 178,
+      "data": "2025-11-25T21:46:22",
+      "posto": "Posto Rodoanel",
+      "cidade": "Guarulhos",
+      "uf": "SP",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.26,
+      "litros": 48.0,
+      "totalPago": 252.48,
+      "motorista": {
+        "nome": "Renato Farias",
+        "cpf": "365.147.781-33"
+      },
+      "veiculo": {
+        "placa": "ARY-3N44",
+        "modelo": "Ford Ka"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 118,
+      "data": "2025-11-25T07:56:22",
+      "posto": "BR Petrobras",
+      "cidade": "Campinas",
+      "uf": "SP",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.3,
+      "litros": 49.4,
+      "totalPago": 311.22,
+      "motorista": {
+        "nome": "Carlos Ferreira",
+        "cpf": "324.911.295-16"
+      },
+      "veiculo": {
+        "placa": "EAA-0F93",
+        "modelo": "Toyota Corolla"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 5,
+      "data": "2025-11-25T07:55:22",
+      "posto": "Shell Avenida",
+      "cidade": "Vila Velha",
+      "uf": "ES",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.61,
+      "litros": 35.3,
+      "totalPago": 198.03,
+      "motorista": {
+        "nome": "Ricardo Souza",
+        "cpf": "412.364.420-31"
+      },
+      "veiculo": {
+        "placa": "VZR-9H38",
+        "modelo": "Honda Civic"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 4,
+      "data": "2025-11-24T20:57:22",
+      "posto": "Petrobras BR",
+      "cidade": "Patos",
+      "uf": "PB",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.11,
+      "litros": 39.5,
+      "totalPago": 241.34,
+      "motorista": {
+        "nome": "Lucas Pereira",
+        "cpf": "449.275.454-14"
+      },
+      "veiculo": {
+        "placa": "KDU-5W88",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 168,
+      "data": "2025-11-24T13:10:22",
+      "posto": "Ipiranga Box",
+      "cidade": "Caxias do Sul",
+      "uf": "RS",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.38,
+      "litros": 25.5,
+      "totalPago": 162.69,
+      "motorista": {
+        "nome": "Maria Santos",
+        "cpf": "482.906.637-26"
+      },
+      "veiculo": {
+        "placa": "WJY-3V86",
+        "modelo": "Fiat Argo"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 61,
+      "data": "2025-11-22T23:25:22",
+      "posto": "Ipiranga Box",
+      "cidade": "Ribeirão Preto",
+      "uf": "SP",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 5.88,
+      "litros": 66.3,
+      "totalPago": 389.84,
+      "motorista": {
+        "nome": "Alexandre Melo",
+        "cpf": "237.877.207-88"
+      },
+      "veiculo": {
+        "placa": "LUL-1V72",
+        "modelo": "Ford Cargo"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 49,
+      "data": "2025-11-22T10:56:22",
+      "posto": "Ipiranga Km47",
+      "cidade": "Joinville",
+      "uf": "SC",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.21,
+      "litros": 32.2,
+      "totalPago": 167.76,
+      "motorista": {
+        "nome": "Adriana Coelho",
+        "cpf": "574.706.517-31"
+      },
+      "veiculo": {
+        "placa": "JOU-5Q58",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 95,
+      "data": "2025-11-22T05:29:22",
+      "posto": "BR Express",
+      "cidade": "Belo Horizonte",
+      "uf": "MG",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.87,
+      "litros": 42.0,
+      "totalPago": 246.54,
+      "motorista": {
+        "nome": "Rodrigo Cavalcanti",
+        "cpf": "814.721.626-49"
+      },
+      "veiculo": {
+        "placa": "POG-3N26",
+        "modelo": "Renault Kwid"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 160,
+      "data": "2025-11-20T10:58:22",
+      "posto": "BR Mania",
+      "cidade": "Camaçari",
+      "uf": "BA",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.27,
+      "litros": 113.0,
+      "totalPago": 708.51,
+      "motorista": {
+        "nome": "André Mendes",
+        "cpf": "810.960.461-66"
+      },
+      "veiculo": {
+        "placa": "CFE-5Y38",
+        "modelo": "Scania R450"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 154,
+      "data": "2025-11-20T10:32:22",
+      "posto": "BR Petrobras",
+      "cidade": "Belo Horizonte",
+      "uf": "MG",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 7.04,
+      "litros": 119.4,
+      "totalPago": 840.58,
+      "motorista": {
+        "nome": "Marcelo Pinto",
+        "cpf": "617.364.859-55"
+      },
+      "veiculo": {
+        "placa": "RZT-3E85",
+        "modelo": "Iveco Daily"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 107,
+      "data": "2025-11-19T04:03:22",
+      "posto": "Ipiranga Box",
+      "cidade": "Manaus",
+      "uf": "AM",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 5.93,
+      "litros": 141.1,
+      "totalPago": 836.72,
+      "motorista": {
+        "nome": "Henrique Batista",
+        "cpf": "106.612.605-29"
+      },
+      "veiculo": {
+        "placa": "WCJ-8K35",
+        "modelo": "Scania R450"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 56,
+      "data": "2025-11-19T00:41:22",
+      "posto": "Posto Rodoviário",
+      "cidade": "Porto Alegre",
+      "uf": "RS",
+      "tipoCombustivel": "Etanol",
+      "valorLitro": 4.38,
+      "litros": 36.3,
+      "totalPago": 158.99,
+      "motorista": {
+        "nome": "Gustavo Nunes",
+        "cpf": "992.771.297-89"
+      },
+      "veiculo": {
+        "placa": "NVP-1X77",
+        "modelo": "Volkswagen Gol"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 73,
+      "data": "2025-11-18T02:42:22",
+      "posto": "Posto da Rodovia",
+      "cidade": "Londrina",
+      "uf": "PR",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.83,
+      "litros": 137.8,
+      "totalPago": 941.17,
+      "motorista": {
+        "nome": "Alexandre Melo",
+        "cpf": "620.167.187-99"
+      },
+      "veiculo": {
+        "placa": "XIO-1J71",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 173,
+      "data": "2025-11-17T22:02:22",
+      "posto": "Ipiranga Box",
+      "cidade": "Rondonópolis",
+      "uf": "MT",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.65,
+      "litros": 106.4,
+      "totalPago": 707.56,
+      "motorista": {
+        "nome": "Gustavo Nunes",
+        "cpf": "406.390.930-49"
+      },
+      "veiculo": {
+        "placa": "LOF-4Z77",
+        "modelo": "Volvo FH"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 108,
+      "data": "2025-11-17T20:53:22",
+      "posto": "Posto Ipiranga Centro",
+      "cidade": "Belém",
+      "uf": "PA",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.79,
+      "litros": 79.1,
+      "totalPago": 537.09,
+      "motorista": {
+        "nome": "Rodrigo Cavalcanti",
+        "cpf": "533.754.226-21"
+      },
+      "veiculo": {
+        "placa": "JVX-5A91",
+        "modelo": "Ford Cargo"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 165,
+      "data": "2025-11-17T05:24:22",
+      "posto": "Posto Centro",
+      "cidade": "Fortaleza",
+      "uf": "CE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.58,
+      "litros": 40.5,
+      "totalPago": 225.99,
+      "motorista": {
+        "nome": "Paulo Rodrigues",
+        "cpf": "505.496.403-44"
+      },
+      "veiculo": {
+        "placa": "ZFF-4H28",
+        "modelo": "Ford Ka"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 121,
+      "data": "2025-11-17T02:16:22",
+      "posto": "Posto Cidade Nova",
+      "cidade": "Duque de Caxias",
+      "uf": "RJ",
+      "tipoCombustivel": "Etanol",
+      "valorLitro": 4.12,
+      "litros": 36.3,
+      "totalPago": 149.56,
+      "motorista": {
+        "nome": "Natalia Rezende",
+        "cpf": "264.578.703-17"
+      },
+      "veiculo": {
+        "placa": "YMW-3X65",
+        "modelo": "Volkswagen Gol"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 17,
+      "data": "2025-11-16T23:20:22",
+      "posto": "Shell Select",
+      "cidade": "Cuiabá",
+      "uf": "MT",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.18,
+      "litros": 42.5,
+      "totalPago": 262.65,
+      "motorista": {
+        "nome": "Daniela Pires",
+        "cpf": "790.165.819-83"
+      },
+      "veiculo": {
+        "placa": "NPP-8N28",
+        "modelo": "Honda Civic"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 153,
+      "data": "2025-11-15T08:44:22",
+      "posto": "Shell Avenida",
+      "cidade": "Oiapoque",
+      "uf": "AP",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 5.96,
+      "litros": 144.3,
+      "totalPago": 860.03,
+      "motorista": {
+        "nome": "Vanessa Correia",
+        "cpf": "639.595.277-57"
+      },
+      "veiculo": {
+        "placa": "JYV-4P44",
+        "modelo": "Ford Cargo"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 92,
+      "data": "2025-11-14T07:44:22",
+      "posto": "Posto da Rodovia",
+      "cidade": "Porto Velho",
+      "uf": "RO",
+      "tipoCombustivel": "Etanol",
+      "valorLitro": 4.55,
+      "litros": 40.6,
+      "totalPago": 184.73,
+      "motorista": {
+        "nome": "Amanda Rocha",
+        "cpf": "455.723.625-32"
+      },
+      "veiculo": {
+        "placa": "NXW-0A58",
+        "modelo": "Volkswagen Gol"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 156,
+      "data": "2025-11-11T21:07:22",
+      "posto": "Posto Rodoviário",
+      "cidade": "Goiânia",
+      "uf": "GO",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.39,
+      "litros": 33.5,
+      "totalPago": 180.56,
+      "motorista": {
+        "nome": "Juliana Alves",
+        "cpf": "691.720.338-67"
+      },
+      "veiculo": {
+        "placa": "AIT-9A66",
+        "modelo": "Renault Kwid"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 72,
+      "data": "2025-11-11T00:54:22",
+      "posto": "Ipiranga Box",
+      "cidade": "Taguatinga",
+      "uf": "DF",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.59,
+      "litros": 54.0,
+      "totalPago": 301.86,
+      "motorista": {
+        "nome": "Renato Farias",
+        "cpf": "155.236.641-98"
+      },
+      "veiculo": {
+        "placa": "GBV-0M28",
+        "modelo": "Hyundai HB20"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 144,
+      "data": "2025-11-10T08:32:22",
+      "posto": "Shell Express",
+      "cidade": "Imperatriz",
+      "uf": "MA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.01,
+      "litros": 51.7,
+      "totalPago": 310.72,
+      "motorista": {
+        "nome": "Daniela Pires",
+        "cpf": "330.910.705-16"
+      },
+      "veiculo": {
+        "placa": "HJD-9E39",
+        "modelo": "Fiat Argo"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 55,
+      "data": "2025-11-05T23:06:22",
+      "posto": "Petrobras BR",
+      "cidade": "Ribeirão Preto",
+      "uf": "SP",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.11,
+      "litros": 115.1,
+      "totalPago": 703.26,
+      "motorista": {
+        "nome": "Bruno Dias",
+        "cpf": "719.754.185-77"
+      },
+      "veiculo": {
+        "placa": "DMB-7C67",
+        "modelo": "Ford Cargo"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 59,
+      "data": "2025-11-05T04:13:22",
+      "posto": "Posto Ale",
+      "cidade": "Parintins",
+      "uf": "AM",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.63,
+      "litros": 38.1,
+      "totalPago": 214.5,
+      "motorista": {
+        "nome": "Alexandre Melo",
+        "cpf": "541.934.336-30"
+      },
+      "veiculo": {
+        "placa": "RXJ-1O35",
+        "modelo": "Hyundai HB20"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 133,
+      "data": "2025-11-02T06:00:22",
+      "posto": "Posto da Rodovia",
+      "cidade": "Oiapoque",
+      "uf": "AP",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.22,
+      "litros": 38.9,
+      "totalPago": 203.06,
+      "motorista": {
+        "nome": "Bianca Ramos",
+        "cpf": "738.364.924-32"
+      },
+      "veiculo": {
+        "placa": "KFX-6O70",
+        "modelo": "Honda Civic"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 194,
+      "data": "2025-10-31T21:08:22",
+      "posto": "Shell Asa Sul",
+      "cidade": "Várzea Grande",
+      "uf": "MT",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.83,
+      "litros": 41.1,
+      "totalPago": 239.61,
+      "motorista": {
+        "nome": "Thiago Barbosa",
+        "cpf": "891.955.498-73"
+      },
+      "veiculo": {
+        "placa": "AKF-6W68",
+        "modelo": "Honda Civic"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 146,
+      "data": "2025-10-30T05:22:22",
+      "posto": "Total Combustíveis",
+      "cidade": "Macapá",
+      "uf": "AP",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.65,
+      "litros": 90.3,
+      "totalPago": 600.5,
+      "motorista": {
+        "nome": "Marcelo Pinto",
+        "cpf": "534.288.637-85"
+      },
+      "veiculo": {
+        "placa": "JOC-6K13",
+        "modelo": "Fiat Toro"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 32,
+      "data": "2025-10-30T01:32:22",
+      "posto": "BR Petrobras",
+      "cidade": "Pelotas",
+      "uf": "RS",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.44,
+      "litros": 50.6,
+      "totalPago": 275.26,
+      "motorista": {
+        "nome": "Daniela Pires",
+        "cpf": "571.960.265-88"
+      },
+      "veiculo": {
+        "placa": "NAE-6U49",
+        "modelo": "Hyundai HB20"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 58,
+      "data": "2025-10-29T08:30:22",
+      "posto": "Posto Rodoviário",
+      "cidade": "São Gonçalo do Amarante",
+      "uf": "RN",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.23,
+      "litros": 54.2,
+      "totalPago": 337.67,
+      "motorista": {
+        "nome": "Diego Castro",
+        "cpf": "925.626.234-63"
+      },
+      "veiculo": {
+        "placa": "SBJ-5J61",
+        "modelo": "Jeep Compass"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 171,
+      "data": "2025-10-29T05:06:22",
+      "posto": "Shell Select",
+      "cidade": "Caracaraí",
+      "uf": "RR",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.5,
+      "litros": 51.7,
+      "totalPago": 284.35,
+      "motorista": {
+        "nome": "João da Silva",
+        "cpf": "441.401.986-57"
+      },
+      "veiculo": {
+        "placa": "JMX-5T12",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 6,
+      "data": "2025-10-28T09:09:22",
+      "posto": "Posto Ipiranga Centro",
+      "cidade": "Taguatinga",
+      "uf": "DF",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.49,
+      "litros": 92.2,
+      "totalPago": 598.38,
+      "motorista": {
+        "nome": "Bruno Dias",
+        "cpf": "973.748.992-33"
+      },
+      "veiculo": {
+        "placa": "JKG-3P85",
+        "modelo": "Fiat Toro"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 112,
+      "data": "2025-10-28T05:37:22",
+      "posto": "Shell V-Power",
+      "cidade": "Cruzeiro do Sul",
+      "uf": "AC",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.06,
+      "litros": 126.0,
+      "totalPago": 763.56,
+      "motorista": {
+        "nome": "Eduardo Campos",
+        "cpf": "851.529.152-21"
+      },
+      "veiculo": {
+        "placa": "QVL-0G71",
+        "modelo": "Scania R450"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 105,
+      "data": "2025-10-27T23:49:22",
+      "posto": "Shell Avenida",
+      "cidade": "Parintins",
+      "uf": "AM",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.12,
+      "litros": 60.7,
+      "totalPago": 371.48,
+      "motorista": {
+        "nome": "Roberto Teixeira",
+        "cpf": "144.242.915-59"
+      },
+      "veiculo": {
+        "placa": "YLW-4A69",
+        "modelo": "Volvo FH"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 93,
+      "data": "2025-10-26T10:10:22",
+      "posto": "Ipiranga Box",
+      "cidade": "São Gonçalo",
+      "uf": "RJ",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 5.8,
+      "litros": 83.4,
+      "totalPago": 483.72,
+      "motorista": {
+        "nome": "Thiago Barbosa",
+        "cpf": "816.686.385-19"
+      },
+      "veiculo": {
+        "placa": "SNZ-5D65",
+        "modelo": "Mercedes Sprinter"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 186,
+      "data": "2025-10-23T20:41:22",
+      "posto": "Shell Asa Sul",
+      "cidade": "Contagem",
+      "uf": "MG",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 7.1,
+      "litros": 65.5,
+      "totalPago": 465.05,
+      "motorista": {
+        "nome": "Adriana Coelho",
+        "cpf": "959.524.359-67"
+      },
+      "veiculo": {
+        "placa": "TYD-7Z63",
+        "modelo": "Mercedes Sprinter"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 187,
+      "data": "2025-10-20T03:48:22",
+      "posto": "BR Mania",
+      "cidade": "Taguatinga",
+      "uf": "DF",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.49,
+      "litros": 47.4,
+      "totalPago": 307.63,
+      "motorista": {
+        "nome": "Lucas Pereira",
+        "cpf": "861.626.145-12"
+      },
+      "veiculo": {
+        "placa": "RIY-9O50",
+        "modelo": "Renault Kwid"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 84,
+      "data": "2025-10-18T06:44:22",
+      "posto": "Total Combustíveis",
+      "cidade": "Cruzeiro do Sul",
+      "uf": "AC",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.37,
+      "litros": 42.3,
+      "totalPago": 227.15,
+      "motorista": {
+        "nome": "Thiago Barbosa",
+        "cpf": "845.755.207-35"
+      },
+      "veiculo": {
+        "placa": "XIJ-4G22",
+        "modelo": "Nissan Kicks"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 42,
+      "data": "2025-10-17T07:04:22",
+      "posto": "Shell Express",
+      "cidade": "Goiânia",
+      "uf": "GO",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.01,
+      "litros": 27.7,
+      "totalPago": 166.48,
+      "motorista": {
+        "nome": "Diego Castro",
+        "cpf": "236.978.603-67"
+      },
+      "veiculo": {
+        "placa": "SAK-2X73",
+        "modelo": "Ford Ka"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 145,
+      "data": "2025-10-16T12:33:22",
+      "posto": "Posto Rodoviário",
+      "cidade": "Sobral",
+      "uf": "CE",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 5.88,
+      "litros": 118.9,
+      "totalPago": 699.13,
+      "motorista": {
+        "nome": "Felipe Araújo",
+        "cpf": "980.407.971-65"
+      },
+      "veiculo": {
+        "placa": "IXY-9L29",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 181,
+      "data": "2025-10-15T23:26:22",
+      "posto": "Shell Express",
+      "cidade": "Natal",
+      "uf": "RN",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.09,
+      "litros": 44.8,
+      "totalPago": 272.83,
+      "motorista": {
+        "nome": "Adriana Coelho",
+        "cpf": "626.378.280-53"
+      },
+      "veiculo": {
+        "placa": "JAU-3D51",
+        "modelo": "Hyundai HB20"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 78,
+      "data": "2025-10-14T21:40:22",
+      "posto": "Posto Ale",
+      "cidade": "Caucaia",
+      "uf": "CE",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.27,
+      "litros": 98.8,
+      "totalPago": 619.48,
+      "motorista": {
+        "nome": "Beatriz Carvalho",
+        "cpf": "796.754.461-60"
+      },
+      "veiculo": {
+        "placa": "UXY-0G26",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 138,
+      "data": "2025-10-14T08:06:22",
+      "posto": "Shell Select",
+      "cidade": "Parnamirim",
+      "uf": "RN",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 5.89,
+      "litros": 79.0,
+      "totalPago": 465.31,
+      "motorista": {
+        "nome": "Patricia Nascimento",
+        "cpf": "359.128.304-78"
+      },
+      "veiculo": {
+        "placa": "SXD-3L71",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 124,
+      "data": "2025-10-13T01:29:22",
+      "posto": "Posto Rodoviário",
+      "cidade": "Ribeirão Preto",
+      "uf": "SP",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.09,
+      "litros": 68.7,
+      "totalPago": 418.38,
+      "motorista": {
+        "nome": "Eduardo Campos",
+        "cpf": "310.812.109-52"
+      },
+      "veiculo": {
+        "placa": "HDE-5H48",
+        "modelo": "Iveco Daily"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 142,
+      "data": "2025-10-12T03:05:22",
+      "posto": "Shell Asa Sul",
+      "cidade": "Várzea Grande",
+      "uf": "MT",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.28,
+      "litros": 26.9,
+      "totalPago": 142.03,
+      "motorista": {
+        "nome": "Carolina Azevedo",
+        "cpf": "547.327.310-70"
+      },
+      "veiculo": {
+        "placa": "YFH-4N69",
+        "modelo": "Toyota Corolla"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 119,
+      "data": "2025-10-11T12:06:22",
+      "posto": "Posto Centro",
+      "cidade": "Três Lagoas",
+      "uf": "MS",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 7.09,
+      "litros": 71.7,
+      "totalPago": 508.35,
+      "motorista": {
+        "nome": "Larissa Ribeiro",
+        "cpf": "855.257.896-20"
+      },
+      "veiculo": {
+        "placa": "JSK-8B23",
+        "modelo": "Iveco Daily"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 99,
+      "data": "2025-10-09T09:49:22",
+      "posto": "Ipiranga Box",
+      "cidade": "São Luís",
+      "uf": "MA",
+      "tipoCombustivel": "Etanol",
+      "valorLitro": 3.52,
+      "litros": 27.3,
+      "totalPago": 96.1,
+      "motorista": {
+        "nome": "Mariana Freitas",
+        "cpf": "394.719.910-86"
+      },
+      "veiculo": {
+        "placa": "PDU-2K24",
+        "modelo": "Volkswagen Gol"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 16,
+      "data": "2025-10-08T00:24:22",
+      "posto": "Posto da Rodovia",
+      "cidade": "Caucaia",
+      "uf": "CE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.58,
+      "litros": 40.0,
+      "totalPago": 223.2,
+      "motorista": {
+        "nome": "Isabella Gonçalves",
+        "cpf": "320.635.675-21"
+      },
+      "veiculo": {
+        "placa": "XTS-5O61",
+        "modelo": "Jeep Compass"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 175,
+      "data": "2025-10-07T04:49:22",
+      "posto": "Posto Ipiranga Centro",
+      "cidade": "Porto Velho",
+      "uf": "RO",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.87,
+      "litros": 35.1,
+      "totalPago": 206.04,
+      "motorista": {
+        "nome": "Silvia Torres",
+        "cpf": "465.912.961-68"
+      },
+      "veiculo": {
+        "placa": "RJK-3P79",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 67,
+      "data": "2025-10-06T00:36:22",
+      "posto": "BR Petrobras",
+      "cidade": "Sobral",
+      "uf": "CE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.25,
+      "litros": 42.6,
+      "totalPago": 266.25,
+      "motorista": {
+        "nome": "Diego Castro",
+        "cpf": "691.515.248-66"
+      },
+      "veiculo": {
+        "placa": "TBT-6L12",
+        "modelo": "Ford Ka"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 115,
+      "data": "2025-10-05T07:09:22",
+      "posto": "BR Petrobras",
+      "cidade": "Cruzeiro do Sul",
+      "uf": "AC",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.45,
+      "litros": 27.6,
+      "totalPago": 150.42,
+      "motorista": {
+        "nome": "Paulo Rodrigues",
+        "cpf": "960.175.393-81"
+      },
+      "veiculo": {
+        "placa": "ZJK-6S84",
+        "modelo": "Chevrolet Onix"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 77,
+      "data": "2025-10-04T10:16:22",
+      "posto": "Posto Cidade Nova",
+      "cidade": "Mucajaí",
+      "uf": "RR",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.37,
+      "litros": 44.3,
+      "totalPago": 237.89,
+      "motorista": {
+        "nome": "Vinicius Lopes",
+        "cpf": "389.341.885-30"
+      },
+      "veiculo": {
+        "placa": "HCI-4I71",
+        "modelo": "Fiat Argo"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 76,
+      "data": "2025-10-01T22:06:22",
+      "posto": "Posto Rodoanel",
+      "cidade": "Santana",
+      "uf": "AP",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.02,
+      "litros": 42.5,
+      "totalPago": 255.85,
+      "motorista": {
+        "nome": "Daniela Pires",
+        "cpf": "733.452.777-17"
+      },
+      "veiculo": {
+        "placa": "KZC-1X79",
+        "modelo": "Nissan Kicks"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 200,
+      "data": "2025-10-01T21:36:22",
+      "posto": "Ipiranga Box",
+      "cidade": "Caxias do Sul",
+      "uf": "RS",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.56,
+      "litros": 135.0,
+      "totalPago": 885.6,
+      "motorista": {
+        "nome": "Julia Cunha",
+        "cpf": "899.989.357-52"
+      },
+      "veiculo": {
+        "placa": "BNU-9Q58",
+        "modelo": "Scania R450"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 52,
+      "data": "2025-09-30T21:39:22",
+      "posto": "Ipiranga Auto Posto",
+      "cidade": "Sobral",
+      "uf": "CE",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.82,
+      "litros": 143.5,
+      "totalPago": 978.67,
+      "motorista": {
+        "nome": "Lucas Pereira",
+        "cpf": "629.893.553-43"
+      },
+      "veiculo": {
+        "placa": "OJU-6N79",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 30,
+      "data": "2025-09-30T09:25:22",
+      "posto": "Posto Centro",
+      "cidade": "Rio de Janeiro",
+      "uf": "RJ",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.17,
+      "litros": 46.7,
+      "totalPago": 288.14,
+      "motorista": {
+        "nome": "Camila Martins",
+        "cpf": "869.507.453-37"
+      },
+      "veiculo": {
+        "placa": "HHS-9Z36",
+        "modelo": "Hyundai HB20"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 100,
+      "data": "2025-09-29T03:10:22",
+      "posto": "BR Express",
+      "cidade": "Rio Largo",
+      "uf": "AL",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.47,
+      "litros": 41.2,
+      "totalPago": 225.36,
+      "motorista": {
+        "nome": "Pedro Oliveira",
+        "cpf": "158.333.124-23"
+      },
+      "veiculo": {
+        "placa": "FYR-8P13",
+        "modelo": "Honda Civic"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 157,
+      "data": "2025-09-29T02:03:22",
+      "posto": "Posto Rodoviário",
+      "cidade": "Brasília",
+      "uf": "DF",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.49,
+      "litros": 120.1,
+      "totalPago": 779.45,
+      "motorista": {
+        "nome": "Gustavo Nunes",
+        "cpf": "498.752.666-83"
+      },
+      "veiculo": {
+        "placa": "UVC-0P75",
+        "modelo": "Volvo FH"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 198,
+      "data": "2025-09-28T05:52:22",
+      "posto": "Ipiranga Km47",
+      "cidade": "Anápolis",
+      "uf": "GO",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.24,
+      "litros": 50.6,
+      "totalPago": 315.74,
+      "motorista": {
+        "nome": "Silvia Torres",
+        "cpf": "643.601.385-81"
+      },
+      "veiculo": {
+        "placa": "WHB-6P67",
+        "modelo": "Chevrolet Tracker"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 66,
+      "data": "2025-09-27T03:01:22",
+      "posto": "Ipiranga Auto Posto",
+      "cidade": "Duque de Caxias",
+      "uf": "RJ",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.39,
+      "litros": 39.1,
+      "totalPago": 210.75,
+      "motorista": {
+        "nome": "Vanessa Correia",
+        "cpf": "225.888.447-13"
+      },
+      "veiculo": {
+        "placa": "EEE-2V79",
+        "modelo": "Toyota Corolla"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 9,
+      "data": "2025-09-26T22:30:22",
+      "posto": "Posto Centro",
+      "cidade": "Rio Largo",
+      "uf": "AL",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.62,
+      "litros": 33.9,
+      "totalPago": 190.52,
+      "motorista": {
+        "nome": "Priscila Moura",
+        "cpf": "371.262.345-83"
+      },
+      "veiculo": {
+        "placa": "NLM-7M94",
+        "modelo": "Hyundai HB20"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 14,
+      "data": "2025-09-25T03:24:22",
+      "posto": "Shell Express",
+      "cidade": "Timon",
+      "uf": "MA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.92,
+      "litros": 51.7,
+      "totalPago": 306.06,
+      "motorista": {
+        "nome": "Vanessa Correia",
+        "cpf": "416.596.242-62"
+      },
+      "veiculo": {
+        "placa": "GBC-9O46",
+        "modelo": "Honda Civic"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 125,
+      "data": "2025-09-23T12:11:22",
+      "posto": "BR Express",
+      "cidade": "Taguatinga",
       "uf": "DF",
       "tipoCombustivel": "Gasolina",
       "valorLitro": 5.89,
-      "litros": 45.5,
-      "totalPago": 267.99,
+      "litros": 27.7,
+      "totalPago": 163.15,
       "motorista": {
-        "nome": "João da Silva",
-        "cpf": "123.456.789-00"
+        "nome": "Letícia Monteiro",
+        "cpf": "126.122.397-84"
       },
       "veiculo": {
-        "placa": "ABC-1234",
-        "modelo": "Fiat Uno"
-      }
+        "placa": "DYT-3S72",
+        "modelo": "Chevrolet Tracker"
+      },
+      "regiao": "Centro-Oeste"
     },
     {
-      "id": 2,
-      "data": "2025-11-14T14:20:00",
+      "id": 120,
+      "data": "2025-09-22T11:51:22",
+      "posto": "Ipiranga Km47",
+      "cidade": "Palmeira dos Índios",
+      "uf": "AL",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.99,
+      "litros": 42.7,
+      "totalPago": 255.77,
+      "motorista": {
+        "nome": "Mauricio Santana",
+        "cpf": "723.255.478-50"
+      },
+      "veiculo": {
+        "placa": "DLA-1T97",
+        "modelo": "Ford Ka"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 85,
+      "data": "2025-09-22T00:17:22",
+      "posto": "Posto Rodoanel",
+      "cidade": "Várzea Grande",
+      "uf": "MT",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.68,
+      "litros": 41.5,
+      "totalPago": 235.72,
+      "motorista": {
+        "nome": "Alexandre Melo",
+        "cpf": "408.548.573-43"
+      },
+      "veiculo": {
+        "placa": "WJX-6P38",
+        "modelo": "Fiat Argo"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 20,
+      "data": "2025-09-20T05:01:22",
+      "posto": "Shell Avenida",
+      "cidade": "Marabá",
+      "uf": "PA",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.16,
+      "litros": 100.6,
+      "totalPago": 619.7,
+      "motorista": {
+        "nome": "Patricia Nascimento",
+        "cpf": "270.503.277-97"
+      },
+      "veiculo": {
+        "placa": "NAP-6P39",
+        "modelo": "Scania R450"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 193,
+      "data": "2025-09-19T23:19:22",
+      "posto": "Shell V-Power",
+      "cidade": "Ceilândia",
+      "uf": "DF",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.49,
+      "litros": 26.1,
+      "totalPago": 169.39,
+      "motorista": {
+        "nome": "Diego Castro",
+        "cpf": "746.736.320-75"
+      },
+      "veiculo": {
+        "placa": "AEQ-6W81",
+        "modelo": "Honda Civic"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 97,
+      "data": "2025-09-19T23:14:22",
+      "posto": "BR Mania",
+      "cidade": "São Luís",
+      "uf": "MA",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 5.94,
+      "litros": 141.6,
+      "totalPago": 841.1,
+      "motorista": {
+        "nome": "Beatriz Carvalho",
+        "cpf": "741.349.645-17"
+      },
+      "veiculo": {
+        "placa": "AMF-7M20",
+        "modelo": "Iveco Daily"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 60,
+      "data": "2025-09-18T22:22:22",
+      "posto": "Shell Avenida",
+      "cidade": "Sobral",
+      "uf": "CE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.25,
+      "litros": 25.6,
+      "totalPago": 134.4,
+      "motorista": {
+        "nome": "Gustavo Nunes",
+        "cpf": "868.448.101-98"
+      },
+      "veiculo": {
+        "placa": "WSW-2F17",
+        "modelo": "Hyundai HB20"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 91,
+      "data": "2025-09-16T11:57:22",
+      "posto": "Total Combustíveis",
+      "cidade": "Taguatinga",
+      "uf": "DF",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.26,
+      "litros": 27.7,
+      "totalPago": 145.7,
+      "motorista": {
+        "nome": "Aline Duarte",
+        "cpf": "973.411.535-78"
+      },
+      "veiculo": {
+        "placa": "KRI-9Q56",
+        "modelo": "Toyota Corolla"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 75,
+      "data": "2025-09-16T09:18:22",
+      "posto": "Ipiranga Box",
+      "cidade": "Vitória da Conquista",
+      "uf": "BA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.3,
+      "litros": 31.1,
+      "totalPago": 164.83,
+      "motorista": {
+        "nome": "Diego Castro",
+        "cpf": "530.896.446-77"
+      },
+      "veiculo": {
+        "placa": "YXT-3K28",
+        "modelo": "Jeep Compass"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 141,
+      "data": "2025-09-16T07:50:22",
+      "posto": "Posto Rodoviário",
+      "cidade": "São Luís",
+      "uf": "MA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.33,
+      "litros": 31.0,
+      "totalPago": 196.23,
+      "motorista": {
+        "nome": "Aline Duarte",
+        "cpf": "784.640.190-77"
+      },
+      "veiculo": {
+        "placa": "MLN-0N52",
+        "modelo": "Honda Civic"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 63,
+      "data": "2025-09-15T08:41:22",
+      "posto": "Posto Centro",
+      "cidade": "Porto Velho",
+      "uf": "RO",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 5.88,
+      "litros": 62.5,
+      "totalPago": 367.5,
+      "motorista": {
+        "nome": "Lucas Pereira",
+        "cpf": "593.576.198-25"
+      },
+      "veiculo": {
+        "placa": "VEC-9B39",
+        "modelo": "Ford Cargo"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 176,
+      "data": "2025-09-14T13:00:22",
+      "posto": "Shell Asa Sul",
+      "cidade": "Aparecida de Goiânia",
+      "uf": "GO",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.45,
+      "litros": 119.8,
+      "totalPago": 772.71,
+      "motorista": {
+        "nome": "João da Silva",
+        "cpf": "223.577.322-13"
+      },
+      "veiculo": {
+        "placa": "NNB-1L81",
+        "modelo": "Iveco Daily"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 7,
+      "data": "2025-09-14T11:35:22",
+      "posto": "BR Mania",
+      "cidade": "Olinda",
+      "uf": "PE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.29,
+      "litros": 26.7,
+      "totalPago": 167.94,
+      "motorista": {
+        "nome": "Maria Santos",
+        "cpf": "141.905.858-56"
+      },
+      "veiculo": {
+        "placa": "EDW-6Z46",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 111,
+      "data": "2025-09-13T12:24:22",
+      "posto": "Petrobras BR",
+      "cidade": "Santa Rita",
+      "uf": "PB",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.83,
+      "litros": 47.5,
+      "totalPago": 276.93,
+      "motorista": {
+        "nome": "Gabriela Cardoso",
+        "cpf": "997.881.796-15"
+      },
+      "veiculo": {
+        "placa": "ZQQ-8F37",
+        "modelo": "Honda Civic"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 104,
+      "data": "2025-09-13T11:01:22",
+      "posto": "Posto Centro",
+      "cidade": "Patos",
+      "uf": "PB",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.96,
+      "litros": 38.7,
+      "totalPago": 230.65,
+      "motorista": {
+        "nome": "Bruno Dias",
+        "cpf": "634.486.543-46"
+      },
+      "veiculo": {
+        "placa": "TOD-7V89",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 96,
+      "data": "2025-09-13T04:57:22",
+      "posto": "BR Mania",
+      "cidade": "Florianópolis",
+      "uf": "SC",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.77,
+      "litros": 77.4,
+      "totalPago": 524.0,
+      "motorista": {
+        "nome": "Mauricio Santana",
+        "cpf": "183.177.369-45"
+      },
+      "veiculo": {
+        "placa": "ZLM-7I79",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 191,
+      "data": "2025-09-11T11:33:22",
+      "posto": "Posto Cidade Nova",
+      "cidade": "Rio Branco",
+      "uf": "AC",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.16,
+      "litros": 54.6,
+      "totalPago": 336.34,
+      "motorista": {
+        "nome": "Vinicius Lopes",
+        "cpf": "829.684.145-53"
+      },
+      "veiculo": {
+        "placa": "GSK-1T62",
+        "modelo": "Chevrolet Onix"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 113,
+      "data": "2025-09-11T09:12:22",
+      "posto": "Shell Express",
+      "cidade": "Parnamirim",
+      "uf": "RN",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.3,
+      "litros": 37.0,
+      "totalPago": 196.1,
+      "motorista": {
+        "nome": "Aline Duarte",
+        "cpf": "467.576.673-49"
+      },
+      "veiculo": {
+        "placa": "NAZ-5U51",
+        "modelo": "Fiat Uno"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 46,
+      "data": "2025-09-11T05:40:22",
+      "posto": "Posto da Rodovia",
+      "cidade": "Cariacica",
+      "uf": "ES",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.23,
+      "litros": 39.8,
+      "totalPago": 208.15,
+      "motorista": {
+        "nome": "Marcelo Pinto",
+        "cpf": "894.856.548-45"
+      },
+      "veiculo": {
+        "placa": "MKG-3I78",
+        "modelo": "Honda Civic"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 83,
+      "data": "2025-09-10T21:58:22",
+      "posto": "Posto Centro",
+      "cidade": "Feira de Santana",
+      "uf": "BA",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.28,
+      "litros": 120.5,
+      "totalPago": 756.74,
+      "motorista": {
+        "nome": "Daniela Pires",
+        "cpf": "859.960.258-36"
+      },
+      "veiculo": {
+        "placa": "FPX-0H22",
+        "modelo": "Mercedes Sprinter"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 189,
+      "data": "2025-09-09T08:25:22",
+      "posto": "Posto da Rodovia",
+      "cidade": "Vitória da Conquista",
+      "uf": "BA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.84,
+      "litros": 35.4,
+      "totalPago": 206.74,
+      "motorista": {
+        "nome": "Fernando Neves",
+        "cpf": "197.537.545-30"
+      },
+      "veiculo": {
+        "placa": "QHU-4P61",
+        "modelo": "Renault Kwid"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 110,
+      "data": "2025-09-08T07:16:22",
+      "posto": "Posto Rodoanel",
+      "cidade": "Serra",
+      "uf": "ES",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.2,
+      "litros": 38.7,
+      "totalPago": 201.24,
+      "motorista": {
+        "nome": "Paulo Rodrigues",
+        "cpf": "153.690.611-36"
+      },
+      "veiculo": {
+        "placa": "XBV-4R42",
+        "modelo": "Renault Kwid"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 27,
+      "data": "2025-09-07T04:32:22",
+      "posto": "Total Combustíveis",
+      "cidade": "São Gonçalo do Amarante",
+      "uf": "RN",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.15,
+      "litros": 48.7,
+      "totalPago": 299.51,
+      "motorista": {
+        "nome": "Tatiana Moreira",
+        "cpf": "283.698.399-14"
+      },
+      "veiculo": {
+        "placa": "SXR-8S35",
+        "modelo": "Fiat Argo"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 172,
+      "data": "2025-09-02T23:20:22",
+      "posto": "Posto Ipiranga Centro",
+      "cidade": "Corumbá",
+      "uf": "MS",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.32,
+      "litros": 41.9,
+      "totalPago": 222.91,
+      "motorista": {
+        "nome": "Vinicius Lopes",
+        "cpf": "348.352.934-60"
+      },
+      "veiculo": {
+        "placa": "KFL-8M68",
+        "modelo": "Nissan Kicks"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 10,
+      "data": "2025-09-02T09:25:22",
+      "posto": "Posto da Rodovia",
+      "cidade": "Juazeiro do Norte",
+      "uf": "CE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.22,
+      "litros": 48.0,
+      "totalPago": 250.56,
+      "motorista": {
+        "nome": "Alexandre Melo",
+        "cpf": "620.396.864-29"
+      },
+      "veiculo": {
+        "placa": "DHO-0T91",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 39,
+      "data": "2025-08-31T02:21:22",
+      "posto": "Ipiranga Auto Posto",
+      "cidade": "Duque de Caxias",
+      "uf": "RJ",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.0,
+      "litros": 40.8,
+      "totalPago": 244.8,
+      "motorista": {
+        "nome": "Gustavo Nunes",
+        "cpf": "824.364.760-18"
+      },
+      "veiculo": {
+        "placa": "LMP-7K92",
+        "modelo": "Ford Ka"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 197,
+      "data": "2025-08-30T09:23:22",
+      "posto": "Ipiranga Km47",
+      "cidade": "Sobral",
+      "uf": "CE",
+      "tipoCombustivel": "Etanol",
+      "valorLitro": 4.65,
+      "litros": 39.0,
+      "totalPago": 181.35,
+      "motorista": {
+        "nome": "Carolina Azevedo",
+        "cpf": "382.646.990-67"
+      },
+      "veiculo": {
+        "placa": "UIO-5U74",
+        "modelo": "Volkswagen Gol"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 177,
+      "data": "2025-08-29T09:32:22",
+      "posto": "Ipiranga Km47",
+      "cidade": "Caucaia",
+      "uf": "CE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.53,
+      "litros": 32.4,
+      "totalPago": 179.17,
+      "motorista": {
+        "nome": "Julia Cunha",
+        "cpf": "489.273.189-95"
+      },
+      "veiculo": {
+        "placa": "BEF-0P17",
+        "modelo": "Nissan Kicks"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 169,
+      "data": "2025-08-29T01:12:22",
+      "posto": "Shell V-Power",
+      "cidade": "Ponta Grossa",
+      "uf": "PR",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.61,
+      "litros": 42.5,
+      "totalPago": 238.43,
+      "motorista": {
+        "nome": "Tatiana Moreira",
+        "cpf": "345.772.245-29"
+      },
+      "veiculo": {
+        "placa": "JGY-3J32",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 114,
+      "data": "2025-08-28T10:55:22",
+      "posto": "Posto Rodoviário",
+      "cidade": "Rio Verde",
+      "uf": "GO",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 7.15,
+      "litros": 102.4,
+      "totalPago": 732.16,
+      "motorista": {
+        "nome": "Maria Santos",
+        "cpf": "406.797.937-51"
+      },
+      "veiculo": {
+        "placa": "OHD-1J42",
+        "modelo": "Fiat Toro"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 174,
+      "data": "2025-08-27T05:10:22",
+      "posto": "Posto Centro",
+      "cidade": "Brasília",
+      "uf": "DF",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.37,
+      "litros": 29.4,
+      "totalPago": 187.28,
+      "motorista": {
+        "nome": "Aline Duarte",
+        "cpf": "808.508.305-99"
+      },
+      "veiculo": {
+        "placa": "AIT-9I13",
+        "modelo": "Chevrolet Onix"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 185,
+      "data": "2025-08-26T12:53:22",
+      "posto": "Posto da Rodovia",
+      "cidade": "Ceilândia",
+      "uf": "DF",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.97,
+      "litros": 33.5,
+      "totalPago": 200.0,
+      "motorista": {
+        "nome": "Ricardo Souza",
+        "cpf": "232.231.402-20"
+      },
+      "veiculo": {
+        "placa": "ZIS-5D83",
+        "modelo": "Chevrolet Tracker"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 44,
+      "data": "2025-08-24T23:08:22",
+      "posto": "BR Petrobras",
+      "cidade": "João Pessoa",
+      "uf": "PB",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 7.16,
+      "litros": 78.5,
+      "totalPago": 562.06,
+      "motorista": {
+        "nome": "Bianca Ramos",
+        "cpf": "145.413.697-30"
+      },
+      "veiculo": {
+        "placa": "CCT-9X87",
+        "modelo": "Ford Cargo"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 88,
+      "data": "2025-08-24T06:16:22",
+      "posto": "Shell Asa Sul",
+      "cidade": "Sobral",
+      "uf": "CE",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.08,
+      "litros": 93.8,
+      "totalPago": 570.3,
+      "motorista": {
+        "nome": "Henrique Batista",
+        "cpf": "121.867.102-84"
+      },
+      "veiculo": {
+        "placa": "HYF-0Q35",
+        "modelo": "Fiat Toro"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 126,
+      "data": "2025-08-22T08:33:22",
+      "posto": "BR Mania",
+      "cidade": "Aparecida de Goiânia",
+      "uf": "GO",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.63,
+      "litros": 42.9,
+      "totalPago": 241.53,
+      "motorista": {
+        "nome": "Priscila Moura",
+        "cpf": "344.796.176-50"
+      },
+      "veiculo": {
+        "placa": "NHL-2H95",
+        "modelo": "Fiat Argo"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 139,
+      "data": "2025-08-21T08:04:22",
+      "posto": "Ipiranga Km47",
+      "cidade": "Anápolis",
+      "uf": "GO",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.69,
+      "litros": 97.9,
+      "totalPago": 654.95,
+      "motorista": {
+        "nome": "Vanessa Correia",
+        "cpf": "874.835.810-19"
+      },
+      "veiculo": {
+        "placa": "HXE-3Z58",
+        "modelo": "Fiat Toro"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 25,
+      "data": "2025-08-21T02:32:22",
+      "posto": "Ipiranga Auto Posto",
+      "cidade": "Vila Velha",
+      "uf": "ES",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.3,
+      "litros": 28.1,
+      "totalPago": 177.03,
+      "motorista": {
+        "nome": "Rafael Gomes",
+        "cpf": "638.304.208-25"
+      },
+      "veiculo": {
+        "placa": "QMW-2S81",
+        "modelo": "Chevrolet Tracker"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 148,
+      "data": "2025-08-17T21:01:22",
+      "posto": "Posto Rodoanel",
+      "cidade": "Timon",
+      "uf": "MA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.88,
+      "litros": 53.6,
+      "totalPago": 315.17,
+      "motorista": {
+        "nome": "João da Silva",
+        "cpf": "416.444.196-87"
+      },
+      "veiculo": {
+        "placa": "ZKL-6R25",
+        "modelo": "Renault Kwid"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 166,
+      "data": "2025-08-17T09:13:22",
+      "posto": "Posto Rodoviário",
+      "cidade": "Blumenau",
+      "uf": "SC",
+      "tipoCombustivel": "Etanol",
+      "valorLitro": 4.37,
+      "litros": 39.3,
+      "totalPago": 171.74,
+      "motorista": {
+        "nome": "Pedro Oliveira",
+        "cpf": "956.809.716-52"
+      },
+      "veiculo": {
+        "placa": "NTD-0I98",
+        "modelo": "Volkswagen Gol"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 37,
+      "data": "2025-08-16T04:00:22",
+      "posto": "Total Combustíveis",
+      "cidade": "Corumbá",
+      "uf": "MS",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.04,
+      "litros": 105.6,
+      "totalPago": 637.82,
+      "motorista": {
+        "nome": "Julia Cunha",
+        "cpf": "306.145.640-82"
+      },
+      "veiculo": {
+        "placa": "JUH-0L25",
+        "modelo": "Iveco Daily"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 167,
+      "data": "2025-08-13T21:15:22",
+      "posto": "Ipiranga Auto Posto",
+      "cidade": "Ceilândia",
+      "uf": "DF",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.75,
+      "litros": 37.8,
+      "totalPago": 217.35,
+      "motorista": {
+        "nome": "Pedro Oliveira",
+        "cpf": "460.159.300-80"
+      },
+      "veiculo": {
+        "placa": "OTS-8Q49",
+        "modelo": "Honda Civic"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 29,
+      "data": "2025-08-11T09:22:22",
+      "posto": "Posto Centro",
+      "cidade": "Araguaína",
+      "uf": "TO",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.64,
+      "litros": 29.1,
+      "totalPago": 164.12,
+      "motorista": {
+        "nome": "Julia Cunha",
+        "cpf": "169.639.478-11"
+      },
+      "veiculo": {
+        "placa": "IYL-6E75",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 43,
+      "data": "2025-08-10T08:18:22",
+      "posto": "Shell Avenida",
+      "cidade": "Fortaleza",
+      "uf": "CE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.11,
+      "litros": 48.7,
+      "totalPago": 297.56,
+      "motorista": {
+        "nome": "Renato Farias",
+        "cpf": "532.920.725-90"
+      },
+      "veiculo": {
+        "placa": "BPA-3F28",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 123,
+      "data": "2025-08-09T10:04:22",
+      "posto": "BR Mania",
+      "cidade": "Ananindeua",
+      "uf": "PA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.49,
+      "litros": 26.1,
+      "totalPago": 169.39,
+      "motorista": {
+        "nome": "Patricia Nascimento",
+        "cpf": "111.110.589-59"
+      },
+      "veiculo": {
+        "placa": "MHK-9E41",
+        "modelo": "Fiat Argo"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 170,
+      "data": "2025-08-09T06:35:22",
+      "posto": "Shell Avenida",
+      "cidade": "Camaçari",
+      "uf": "BA",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.02,
+      "litros": 69.2,
+      "totalPago": 416.58,
+      "motorista": {
+        "nome": "Letícia Monteiro",
+        "cpf": "713.402.795-59"
+      },
+      "veiculo": {
+        "placa": "FIT-4B93",
+        "modelo": "Scania R450"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 45,
+      "data": "2025-08-09T06:10:22",
+      "posto": "Posto Rodoanel",
+      "cidade": "Várzea Grande",
+      "uf": "MT",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 5.94,
+      "litros": 141.3,
+      "totalPago": 839.32,
+      "motorista": {
+        "nome": "Alexandre Melo",
+        "cpf": "805.438.143-98"
+      },
+      "veiculo": {
+        "placa": "HKT-9X53",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 34,
+      "data": "2025-08-09T05:03:22",
+      "posto": "Shell Express",
+      "cidade": "Campinas",
+      "uf": "SP",
+      "tipoCombustivel": "Etanol",
+      "valorLitro": 4.47,
+      "litros": 44.2,
+      "totalPago": 197.57,
+      "motorista": {
+        "nome": "Bruno Dias",
+        "cpf": "556.556.478-87"
+      },
+      "veiculo": {
+        "placa": "III-2Z44",
+        "modelo": "Volkswagen Gol"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 195,
+      "data": "2025-08-08T23:31:22",
+      "posto": "Posto Ipiranga Centro",
+      "cidade": "Cariacica",
+      "uf": "ES",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.21,
+      "litros": 48.5,
+      "totalPago": 252.69,
+      "motorista": {
+        "nome": "Daniela Pires",
+        "cpf": "286.874.435-63"
+      },
+      "veiculo": {
+        "placa": "XYB-0K78",
+        "modelo": "Fiat Uno"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 11,
+      "data": "2025-08-08T08:56:22",
+      "posto": "BR Petrobras",
+      "cidade": "Várzea Grande",
+      "uf": "MT",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.09,
+      "litros": 44.9,
+      "totalPago": 273.44,
+      "motorista": {
+        "nome": "Fábio Barros",
+        "cpf": "566.890.448-87"
+      },
+      "veiculo": {
+        "placa": "YYH-3U42",
+        "modelo": "Nissan Kicks"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 48,
+      "data": "2025-08-08T02:24:22",
+      "posto": "Petrobras BR",
+      "cidade": "Uberlândia",
+      "uf": "MG",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 7.18,
+      "litros": 93.0,
+      "totalPago": 667.74,
+      "motorista": {
+        "nome": "Vanessa Correia",
+        "cpf": "554.596.267-60"
+      },
+      "veiculo": {
+        "placa": "ZAC-2E38",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 57,
+      "data": "2025-08-06T23:30:22",
+      "posto": "Posto da Rodovia",
+      "cidade": "Belo Horizonte",
+      "uf": "MG",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 5.99,
+      "litros": 106.9,
+      "totalPago": 640.33,
+      "motorista": {
+        "nome": "Leonardo Vieira",
+        "cpf": "517.666.211-15"
+      },
+      "veiculo": {
+        "placa": "HEF-9X81",
+        "modelo": "Volvo FH"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 71,
+      "data": "2025-08-06T07:11:22",
+      "posto": "Total Combustíveis",
+      "cidade": "Caucaia",
+      "uf": "CE",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.16,
+      "litros": 96.2,
+      "totalPago": 592.59,
+      "motorista": {
+        "nome": "Juliana Alves",
+        "cpf": "809.992.524-34"
+      },
+      "veiculo": {
+        "placa": "BLL-4G55",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 143,
+      "data": "2025-08-05T03:41:22",
+      "posto": "Shell Asa Sul",
+      "cidade": "Manaus",
+      "uf": "AM",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.59,
+      "litros": 96.6,
+      "totalPago": 636.59,
+      "motorista": {
+        "nome": "Alexandre Melo",
+        "cpf": "156.522.552-70"
+      },
+      "veiculo": {
+        "placa": "III-6Q40",
+        "modelo": "Scania R450"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 130,
+      "data": "2025-08-05T01:24:22",
+      "posto": "BR Petrobras",
+      "cidade": "Laranjal do Jari",
+      "uf": "AP",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.58,
+      "litros": 120.6,
+      "totalPago": 793.55,
+      "motorista": {
+        "nome": "Beatriz Carvalho",
+        "cpf": "690.631.221-80"
+      },
+      "veiculo": {
+        "placa": "YTW-4Q11",
+        "modelo": "Ford Cargo"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 36,
+      "data": "2025-08-05T00:07:22",
+      "posto": "Posto Cidade Nova",
+      "cidade": "Sorocaba",
+      "uf": "SP",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.1,
+      "litros": 30.4,
+      "totalPago": 185.44,
+      "motorista": {
+        "nome": "Gustavo Nunes",
+        "cpf": "805.139.976-17"
+      },
+      "veiculo": {
+        "placa": "WWA-4K50",
+        "modelo": "Jeep Compass"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 135,
+      "data": "2025-08-04T23:41:22",
+      "posto": "Petrobras BR",
+      "cidade": "Juiz de Fora",
+      "uf": "MG",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.29,
+      "litros": 51.8,
+      "totalPago": 274.02,
+      "motorista": {
+        "nome": "Adriana Coelho",
+        "cpf": "102.766.466-44"
+      },
+      "veiculo": {
+        "placa": "OCR-9I26",
+        "modelo": "Honda Civic"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 41,
+      "data": "2025-08-04T11:29:22",
+      "posto": "Posto Cidade Nova",
+      "cidade": "Ponta Grossa",
+      "uf": "PR",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.7,
+      "litros": 33.4,
+      "totalPago": 190.38,
+      "motorista": {
+        "nome": "Thiago Barbosa",
+        "cpf": "207.935.835-30"
+      },
+      "veiculo": {
+        "placa": "OIY-2O88",
+        "modelo": "Fiat Argo"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 199,
+      "data": "2025-08-03T12:14:22",
+      "posto": "Posto Ale",
+      "cidade": "Serra",
+      "uf": "ES",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.19,
+      "litros": 49.0,
+      "totalPago": 303.31,
+      "motorista": {
+        "nome": "João da Silva",
+        "cpf": "485.190.307-49"
+      },
+      "veiculo": {
+        "placa": "HIP-9B85",
+        "modelo": "Renault Kwid"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 158,
+      "data": "2025-08-03T05:04:22",
+      "posto": "Posto Rodoanel",
+      "cidade": "Ji-Paraná",
+      "uf": "RO",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.38,
+      "litros": 116.4,
+      "totalPago": 742.63,
+      "motorista": {
+        "nome": "Alexandre Melo",
+        "cpf": "512.926.841-83"
+      },
+      "veiculo": {
+        "placa": "FVD-2W42",
+        "modelo": "Volvo FH"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 149,
+      "data": "2025-07-30T10:39:22",
+      "posto": "Posto Ipiranga Centro",
+      "cidade": "Ceilândia",
+      "uf": "DF",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.73,
+      "litros": 35.7,
+      "totalPago": 204.56,
+      "motorista": {
+        "nome": "Fernando Neves",
+        "cpf": "125.731.356-11"
+      },
+      "veiculo": {
+        "placa": "OBO-4O38",
+        "modelo": "Jeep Compass"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 28,
+      "data": "2025-07-30T04:17:22",
+      "posto": "Shell Avenida",
+      "cidade": "Niterói",
+      "uf": "RJ",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.7,
+      "litros": 52.7,
+      "totalPago": 300.39,
+      "motorista": {
+        "nome": "Juliana Alves",
+        "cpf": "186.806.456-54"
+      },
+      "veiculo": {
+        "placa": "QEC-6C85",
+        "modelo": "Nissan Kicks"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 69,
+      "data": "2025-07-30T01:38:22",
+      "posto": "Ipiranga Box",
+      "cidade": "Marabá",
+      "uf": "PA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.62,
+      "litros": 44.0,
+      "totalPago": 247.28,
+      "motorista": {
+        "nome": "Luciana Cruz",
+        "cpf": "880.487.232-18"
+      },
+      "veiculo": {
+        "placa": "WDR-6K18",
+        "modelo": "Renault Kwid"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 98,
+      "data": "2025-07-29T07:09:22",
+      "posto": "Posto Cidade Nova",
+      "cidade": "Porto Nacional",
+      "uf": "TO",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.81,
+      "litros": 45.3,
+      "totalPago": 263.19,
+      "motorista": {
+        "nome": "Mariana Freitas",
+        "cpf": "974.982.820-79"
+      },
+      "veiculo": {
+        "placa": "GKB-7K70",
+        "modelo": "Nissan Kicks"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 80,
+      "data": "2025-07-28T22:17:22",
+      "posto": "BR Express",
+      "cidade": "Parnamirim",
+      "uf": "RN",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.5,
+      "litros": 36.2,
+      "totalPago": 199.1,
+      "motorista": {
+        "nome": "Julia Cunha",
+        "cpf": "578.392.945-28"
+      },
+      "veiculo": {
+        "placa": "YKY-8K81",
+        "modelo": "Ford Ka"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 164,
+      "data": "2025-07-28T12:27:22",
+      "posto": "Shell Asa Sul",
+      "cidade": "Maringá",
+      "uf": "PR",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.55,
+      "litros": 52.0,
+      "totalPago": 288.6,
+      "motorista": {
+        "nome": "Isabella Gonçalves",
+        "cpf": "439.681.763-85"
+      },
+      "veiculo": {
+        "placa": "PWX-1A55",
+        "modelo": "Chevrolet Onix"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 192,
+      "data": "2025-07-26T21:20:22",
+      "posto": "Shell Select",
+      "cidade": "Chapecó",
+      "uf": "SC",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 5.89,
+      "litros": 134.7,
+      "totalPago": 793.38,
+      "motorista": {
+        "nome": "Bruno Dias",
+        "cpf": "780.787.542-99"
+      },
+      "veiculo": {
+        "placa": "LAX-8D78",
+        "modelo": "Fiat Toro"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 53,
+      "data": "2025-07-26T11:09:22",
+      "posto": "Ipiranga Km47",
+      "cidade": "Londrina",
+      "uf": "PR",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.5,
+      "litros": 67.8,
+      "totalPago": 440.7,
+      "motorista": {
+        "nome": "Eduardo Campos",
+        "cpf": "514.434.236-50"
+      },
+      "veiculo": {
+        "placa": "RAD-1V75",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 159,
+      "data": "2025-07-23T05:14:22",
+      "posto": "BR Mania",
+      "cidade": "Oiapoque",
+      "uf": "AP",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.62,
+      "litros": 52.3,
+      "totalPago": 293.93,
+      "motorista": {
+        "nome": "Vanessa Correia",
+        "cpf": "776.227.725-70"
+      },
+      "veiculo": {
+        "placa": "IDV-1Q36",
+        "modelo": "Chevrolet Tracker"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 3,
+      "data": "2025-07-23T03:18:22",
+      "posto": "Ipiranga Auto Posto",
+      "cidade": "Palmeira dos Índios",
+      "uf": "AL",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.61,
+      "litros": 75.0,
+      "totalPago": 495.75,
+      "motorista": {
+        "nome": "Thiago Barbosa",
+        "cpf": "735.162.465-97"
+      },
+      "veiculo": {
+        "placa": "FUH-8A29",
+        "modelo": "Ford Cargo"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 81,
+      "data": "2025-07-22T21:38:22",
+      "posto": "Total Combustíveis",
+      "cidade": "Caucaia",
+      "uf": "CE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.81,
+      "litros": 37.8,
+      "totalPago": 219.62,
+      "motorista": {
+        "nome": "Ana Costa",
+        "cpf": "402.192.956-45"
+      },
+      "veiculo": {
+        "placa": "UCW-5L23",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 103,
+      "data": "2025-07-21T09:23:22",
+      "posto": "Shell Express",
+      "cidade": "Caracaraí",
+      "uf": "RR",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.62,
+      "litros": 149.1,
+      "totalPago": 987.04,
+      "motorista": {
+        "nome": "Vanessa Correia",
+        "cpf": "777.810.628-72"
+      },
+      "veiculo": {
+        "placa": "MCN-3U53",
+        "modelo": "Scania R450"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 127,
+      "data": "2025-07-20T11:59:22",
+      "posto": "Shell Select",
+      "cidade": "Vila Velha",
+      "uf": "ES",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.45,
+      "litros": 33.6,
+      "totalPago": 216.72,
+      "motorista": {
+        "nome": "Felipe Araújo",
+        "cpf": "627.808.499-36"
+      },
+      "veiculo": {
+        "placa": "UUM-6S32",
+        "modelo": "Toyota Corolla"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 132,
+      "data": "2025-07-19T21:27:22",
+      "posto": "BR Petrobras",
+      "cidade": "Belém",
+      "uf": "PA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.23,
+      "litros": 42.2,
+      "totalPago": 262.91,
+      "motorista": {
+        "nome": "Henrique Batista",
+        "cpf": "778.483.652-98"
+      },
+      "veiculo": {
+        "placa": "KUR-8X60",
+        "modelo": "Jeep Compass"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 62,
+      "data": "2025-07-19T10:54:22",
+      "posto": "Posto da Rodovia",
+      "cidade": "Mucajaí",
+      "uf": "RR",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.38,
+      "litros": 52.7,
+      "totalPago": 283.53,
+      "motorista": {
+        "nome": "Vinicius Lopes",
+        "cpf": "922.927.333-44"
+      },
+      "veiculo": {
+        "placa": "XHR-2Y56",
+        "modelo": "Ford Ka"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 87,
+      "data": "2025-07-16T23:53:22",
+      "posto": "Posto Ale",
+      "cidade": "Caucaia",
+      "uf": "CE",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.22,
+      "litros": 147.7,
+      "totalPago": 918.69,
+      "motorista": {
+        "nome": "Mauricio Santana",
+        "cpf": "571.501.727-64"
+      },
+      "veiculo": {
+        "placa": "PLU-0L80",
+        "modelo": "Fiat Toro"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 109,
+      "data": "2025-07-16T23:00:22",
+      "posto": "Total Combustíveis",
+      "cidade": "Ariquemes",
+      "uf": "RO",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.48,
+      "litros": 89.5,
+      "totalPago": 579.96,
+      "motorista": {
+        "nome": "Bruno Dias",
+        "cpf": "908.912.517-89"
+      },
+      "veiculo": {
+        "placa": "BHN-5B47",
+        "modelo": "Iveco Daily"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 150,
+      "data": "2025-07-16T06:54:22",
+      "posto": "Ipiranga Km47",
+      "cidade": "Sena Madureira",
+      "uf": "AC",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.38,
+      "litros": 122.0,
+      "totalPago": 778.36,
+      "motorista": {
+        "nome": "Daniela Pires",
+        "cpf": "887.860.721-44"
+      },
+      "veiculo": {
+        "placa": "NTC-1V87",
+        "modelo": "Iveco Daily"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 23,
+      "data": "2025-07-15T10:20:22",
+      "posto": "Shell Asa Sul",
+      "cidade": "Santo André",
+      "uf": "SP",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.31,
+      "litros": 126.8,
+      "totalPago": 800.11,
+      "motorista": {
+        "nome": "Bianca Ramos",
+        "cpf": "842.327.802-94"
+      },
+      "veiculo": {
+        "placa": "ALE-0E95",
+        "modelo": "Volvo FH"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 86,
+      "data": "2025-07-14T21:57:22",
+      "posto": "Ipiranga Auto Posto",
+      "cidade": "Ananindeua",
+      "uf": "PA",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.45,
+      "litros": 144.4,
+      "totalPago": 931.38,
+      "motorista": {
+        "nome": "Ana Costa",
+        "cpf": "538.864.588-95"
+      },
+      "veiculo": {
+        "placa": "IBB-1Q20",
+        "modelo": "Fiat Toro"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 47,
+      "data": "2025-07-14T10:26:22",
+      "posto": "BR Mania",
+      "cidade": "Itacoatiara",
+      "uf": "AM",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.6,
+      "litros": 33.0,
+      "totalPago": 184.8,
+      "motorista": {
+        "nome": "Marcelo Pinto",
+        "cpf": "237.615.164-15"
+      },
+      "veiculo": {
+        "placa": "YGG-4K31",
+        "modelo": "Hyundai HB20"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 122,
+      "data": "2025-07-14T05:52:22",
+      "posto": "Total Combustíveis",
+      "cidade": "Caracaraí",
+      "uf": "RR",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.42,
+      "litros": 125.7,
+      "totalPago": 806.99,
+      "motorista": {
+        "nome": "Ana Costa",
+        "cpf": "750.128.795-15"
+      },
+      "veiculo": {
+        "placa": "VTT-4Z15",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 54,
+      "data": "2025-07-14T00:45:22",
+      "posto": "BR Express",
+      "cidade": "Macapá",
+      "uf": "AP",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 7.12,
+      "litros": 60.7,
+      "totalPago": 432.18,
+      "motorista": {
+        "nome": "Bianca Ramos",
+        "cpf": "189.543.160-43"
+      },
+      "veiculo": {
+        "placa": "FKU-8Z41",
+        "modelo": "Volvo FH"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 21,
+      "data": "2025-07-12T22:44:22",
+      "posto": "BR Petrobras",
+      "cidade": "Rorainópolis",
+      "uf": "RR",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.65,
+      "litros": 33.9,
+      "totalPago": 191.53,
+      "motorista": {
+        "nome": "Gabriela Cardoso",
+        "cpf": "536.760.105-12"
+      },
+      "veiculo": {
+        "placa": "YWM-2P62",
+        "modelo": "Toyota Corolla"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 163,
+      "data": "2025-07-11T13:04:22",
+      "posto": "BR Express",
+      "cidade": "Arapiraca",
+      "uf": "AL",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.73,
+      "litros": 96.2,
+      "totalPago": 647.43,
+      "motorista": {
+        "nome": "Paulo Rodrigues",
+        "cpf": "813.802.750-26"
+      },
+      "veiculo": {
+        "placa": "BPL-7D82",
+        "modelo": "Scania R450"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 180,
+      "data": "2025-07-11T12:00:22",
+      "posto": "Posto Ipiranga Centro",
+      "cidade": "Santana",
+      "uf": "AP",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.22,
+      "litros": 122.2,
+      "totalPago": 760.08,
+      "motorista": {
+        "nome": "Paulo Rodrigues",
+        "cpf": "487.731.336-39"
+      },
+      "veiculo": {
+        "placa": "RVU-8X51",
+        "modelo": "Iveco Daily"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 89,
+      "data": "2025-07-11T02:23:22",
       "posto": "Shell Asa Sul",
       "cidade": "Brasília",
       "uf": "DF",
       "tipoCombustivel": "Diesel",
-      "valorLitro": 6.25,
-      "litros": 80.0,
-      "totalPago": 500.00,
+      "valorLitro": 6.68,
+      "litros": 119.5,
+      "totalPago": 798.26,
       "motorista": {
-        "nome": "Maria Santos",
-        "cpf": "987.654.321-00"
+        "nome": "Henrique Batista",
+        "cpf": "890.115.561-37"
       },
       "veiculo": {
-        "placa": "XYZ-5678",
-        "modelo": "Mercedes Sprinter"
-      }
+        "placa": "NJB-3V54",
+        "modelo": "Fiat Toro"
+      },
+      "regiao": "Centro-Oeste"
     },
     {
-      "id": 3,
-      "data": "2025-11-13T08:45:00",
-      "posto": "BR Petrobras",
-      "cidade": "São Paulo",
-      "uf": "SP",
-      "tipoCombustivel": "Etanol",
-      "valorLitro": 3.99,
-      "litros": 35.0,
-      "totalPago": 139.65,
+      "id": 140,
+      "data": "2025-07-07T07:49:22",
+      "posto": "Posto Rodoanel",
+      "cidade": "Timon",
+      "uf": "MA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.63,
+      "litros": 31.0,
+      "totalPago": 174.53,
       "motorista": {
-        "nome": "Pedro Oliveira",
-        "cpf": "456.789.123-00"
+        "nome": "Adriana Coelho",
+        "cpf": "107.483.805-52"
       },
       "veiculo": {
-        "placa": "DEF-9012",
+        "placa": "YYY-7Z45",
+        "modelo": "Chevrolet Onix"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 161,
+      "data": "2025-07-06T12:20:22",
+      "posto": "Ipiranga Auto Posto",
+      "cidade": "Itacoatiara",
+      "uf": "AM",
+      "tipoCombustivel": "Etanol",
+      "valorLitro": 4.04,
+      "litros": 34.3,
+      "totalPago": 138.57,
+      "motorista": {
+        "nome": "Isabella Gonçalves",
+        "cpf": "379.605.673-22"
+      },
+      "veiculo": {
+        "placa": "AWV-9N76",
         "modelo": "Volkswagen Gol"
-      }
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 68,
+      "data": "2025-07-03T02:40:22",
+      "posto": "Total Combustíveis",
+      "cidade": "Nossa Senhora do Socorro",
+      "uf": "SE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.03,
+      "litros": 47.3,
+      "totalPago": 285.22,
+      "motorista": {
+        "nome": "Roberto Teixeira",
+        "cpf": "533.833.161-18"
+      },
+      "veiculo": {
+        "placa": "BKX-3X55",
+        "modelo": "Hyundai HB20"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 179,
+      "data": "2025-06-30T11:58:22",
+      "posto": "Shell Express",
+      "cidade": "Dourados",
+      "uf": "MS",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 7.17,
+      "litros": 110.1,
+      "totalPago": 789.42,
+      "motorista": {
+        "nome": "Gabriela Cardoso",
+        "cpf": "229.252.295-81"
+      },
+      "veiculo": {
+        "placa": "MZZ-7G35",
+        "modelo": "Scania R450"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 2,
+      "data": "2025-06-29T08:01:22",
+      "posto": "Posto da Rodovia",
+      "cidade": "Vitória da Conquista",
+      "uf": "BA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.12,
+      "litros": 51.9,
+      "totalPago": 317.63,
+      "motorista": {
+        "nome": "Julia Cunha",
+        "cpf": "369.975.142-54"
+      },
+      "veiculo": {
+        "placa": "XKJ-1B49",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 183,
+      "data": "2025-06-28T23:40:22",
+      "posto": "Posto Ale",
+      "cidade": "Curitiba",
+      "uf": "PR",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.18,
+      "litros": 99.7,
+      "totalPago": 616.15,
+      "motorista": {
+        "nome": "Gabriela Cardoso",
+        "cpf": "455.577.617-42"
+      },
+      "veiculo": {
+        "placa": "UXX-8T16",
+        "modelo": "Fiat Toro"
+      },
+      "regiao": "Sul"
+    },
+    {
+      "id": 131,
+      "data": "2025-06-28T12:32:22",
+      "posto": "BR Mania",
+      "cidade": "Arapiraca",
+      "uf": "AL",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.22,
+      "litros": 45.8,
+      "totalPago": 284.88,
+      "motorista": {
+        "nome": "Felipe Araújo",
+        "cpf": "329.239.719-61"
+      },
+      "veiculo": {
+        "placa": "CJT-0Y78",
+        "modelo": "Hyundai HB20"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 33,
+      "data": "2025-06-27T22:40:22",
+      "posto": "Shell Asa Sul",
+      "cidade": "Rio de Janeiro",
+      "uf": "RJ",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.94,
+      "litros": 52.3,
+      "totalPago": 310.66,
+      "motorista": {
+        "nome": "Vanessa Correia",
+        "cpf": "358.446.757-66"
+      },
+      "veiculo": {
+        "placa": "LSQ-3A61",
+        "modelo": "Ford Ka"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 116,
+      "data": "2025-06-27T22:17:22",
+      "posto": "Posto Rodoviário",
+      "cidade": "Ji-Paraná",
+      "uf": "RO",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.85,
+      "litros": 135.1,
+      "totalPago": 925.43,
+      "motorista": {
+        "nome": "Marcelo Pinto",
+        "cpf": "236.594.608-11"
+      },
+      "veiculo": {
+        "placa": "YVD-7A89",
+        "modelo": "Fiat Toro"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 18,
+      "data": "2025-06-27T21:18:22",
+      "posto": "Shell V-Power",
+      "cidade": "Santa Rita",
+      "uf": "PB",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 6.31,
+      "litros": 42.2,
+      "totalPago": 266.28,
+      "motorista": {
+        "nome": "Silvia Torres",
+        "cpf": "903.702.392-94"
+      },
+      "veiculo": {
+        "placa": "HMU-9S66",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 38,
+      "data": "2025-06-27T10:13:22",
+      "posto": "Total Combustíveis",
+      "cidade": "Olinda",
+      "uf": "PE",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.3,
+      "litros": 33.7,
+      "totalPago": 178.61,
+      "motorista": {
+        "nome": "Diego Castro",
+        "cpf": "751.337.126-78"
+      },
+      "veiculo": {
+        "placa": "XVZ-7B67",
+        "modelo": "Chevrolet Tracker"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 15,
+      "data": "2025-06-26T21:06:22",
+      "posto": "Shell Select",
+      "cidade": "Salvador",
+      "uf": "BA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.85,
+      "litros": 48.5,
+      "totalPago": 283.72,
+      "motorista": {
+        "nome": "Luciana Cruz",
+        "cpf": "284.226.379-13"
+      },
+      "veiculo": {
+        "placa": "CHK-6C37",
+        "modelo": "Chevrolet Tracker"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 117,
+      "data": "2025-06-26T08:12:22",
+      "posto": "Petrobras BR",
+      "cidade": "Caucaia",
+      "uf": "CE",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.81,
+      "litros": 145.2,
+      "totalPago": 988.81,
+      "motorista": {
+        "nome": "Fernando Neves",
+        "cpf": "540.759.314-78"
+      },
+      "veiculo": {
+        "placa": "TNB-8H11",
+        "modelo": "Volkswagen Delivery"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 70,
+      "data": "2025-06-25T21:29:22",
+      "posto": "Posto Ipiranga Centro",
+      "cidade": "Campina Grande",
+      "uf": "PB",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.98,
+      "litros": 50.9,
+      "totalPago": 304.38,
+      "motorista": {
+        "nome": "Aline Duarte",
+        "cpf": "968.499.747-59"
+      },
+      "veiculo": {
+        "placa": "HDG-1V93",
+        "modelo": "Jeep Compass"
+      },
+      "regiao": "Nordeste"
+    },
+    {
+      "id": 13,
+      "data": "2025-06-24T23:47:22",
+      "posto": "Posto da Rodovia",
+      "cidade": "Ananindeua",
+      "uf": "PA",
+      "tipoCombustivel": "Gasolina",
+      "valorLitro": 5.7,
+      "litros": 44.8,
+      "totalPago": 255.36,
+      "motorista": {
+        "nome": "Rafael Gomes",
+        "cpf": "433.197.698-75"
+      },
+      "veiculo": {
+        "placa": "PXX-5M12",
+        "modelo": "Volkswagen T-Cross"
+      },
+      "regiao": "Norte"
+    },
+    {
+      "id": 82,
+      "data": "2025-06-24T09:37:22",
+      "posto": "Posto Ipiranga Centro",
+      "cidade": "Dourados",
+      "uf": "MS",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.46,
+      "litros": 61.6,
+      "totalPago": 397.94,
+      "motorista": {
+        "nome": "Larissa Ribeiro",
+        "cpf": "270.222.774-81"
+      },
+      "veiculo": {
+        "placa": "GJZ-4N76",
+        "modelo": "Mercedes Sprinter"
+      },
+      "regiao": "Centro-Oeste"
+    },
+    {
+      "id": 65,
+      "data": "2025-06-23T08:47:22",
+      "posto": "Petrobras BR",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.3,
+      "litros": 113.2,
+      "totalPago": 713.16,
+      "motorista": {
+        "nome": "Larissa Ribeiro",
+        "cpf": "128.163.197-53"
+      },
+      "veiculo": {
+        "placa": "WHC-6T89",
+        "modelo": "Ford Cargo"
+      },
+      "regiao": "Sudeste"
+    },
+    {
+      "id": 90,
+      "data": "2025-06-23T04:03:22",
+      "posto": "Posto da Rodovia",
+      "cidade": "Rio Verde",
+      "uf": "GO",
+      "tipoCombustivel": "Diesel",
+      "valorLitro": 6.2,
+      "litros": 100.9,
+      "totalPago": 625.58,
+      "motorista": {
+        "nome": "Beatriz Carvalho",
+        "cpf": "323.699.124-42"
+      },
+      "veiculo": {
+        "placa": "ALX-3S40",
+        "modelo": "Iveco Daily"
+      },
+      "regiao": "Centro-Oeste"
     }
   ]
 }

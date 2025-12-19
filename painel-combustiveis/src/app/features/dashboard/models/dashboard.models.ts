@@ -4,6 +4,7 @@ export interface Abastecimento {
   posto: string;
   cidade: string;
   uf: string;
+  regiao?: string;
   tipoCombustivel: string;
   valorLitro: number;
   litros: number;
@@ -16,6 +17,21 @@ export interface Abastecimento {
     placa: string;
     modelo: string;
   };
+}
+
+export interface DrillDownLevel {
+  type: 'regiao' | 'estado' | 'municipio';
+  value: string;
+  parent?: string;
+  excludedItems?: string[]; // Para expandir "Outros" recursivamente
+}
+
+export interface ChartDataPoint {
+  label: string;
+  value: number;
+  percentage: number;
+  isOthers?: boolean;
+  level: DrillDownLevel;
 }
 
 export interface KpiData {

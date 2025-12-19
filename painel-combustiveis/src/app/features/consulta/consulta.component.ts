@@ -108,19 +108,19 @@ export class ConsultaComponent implements OnInit {
     this.facade.loadAbastecimentos();
   }
 
-  aplicarFiltros(filtros: FilAbastecimento): void {
-    this.abastecimentoSelecionado = abastecimento;
+  aplicarFiltros(filtros: FiltrosConsulta): void {
+    this.facade.aplicarFiltros(filtros);
   }
 
   fecharDetalhes(): void {
-    this.abastecimentoSelecionado = null
+    this.abastecimentoSelecionado = null;
   }
 
   mudarPagina(pagina: number): void {
     this.facade.mudarPagina(pagina);
   }
 
-  verDetalhes(abastecimento: any): void {
-    console.log('Ver detalhes:', abastecimento);
+  verDetalhes(abastecimento: Abastecimento): void {
+    this.abastecimentoSelecionado = abastecimento;
   }
 }

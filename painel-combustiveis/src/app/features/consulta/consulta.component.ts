@@ -3,8 +3,9 @@ import { CommonModule } from '@angular/common';
 import { ConsultaFacade } from './facades/consulta.facade';
 import { FiltrosComponent } from './components/filtros.component';
 import { PaginacaoComponent } from './components/paginacao.component';
+import { DetalheRegistroComponent } from './components/detalhe-registro.component';
 import { LoadingSpinnerComponent, ErrorMessageComponent, CpfMaskPipe, CurrencyBrPipe } from '../../shared';
-import { FiltrosConsulta } from './models/consulta.models';
+import { FiltrosConsulta, Abastecimento } from './models/consulta.models';
 
 @Component({
   selector: 'app-consulta',
@@ -13,6 +14,7 @@ import { FiltrosConsulta } from './models/consulta.models';
     CommonModule,
     FiltrosComponent,
     PaginacaoComponent,
+    DetalheRegistroComponent,
     LoadingSpinnerComponent,
     ErrorMessageComponent,
     CpfMaskPipe,
@@ -88,18 +90,30 @@ import { FiltrosConsulta } from './models/consulta.models';
         [config]="paginacao"
         (paginaChange)="mudarPagina($event)">
       </app-paginacao>
+
+      <!-- Modal de Detalhes -->
+      <app-detalhe-registro
+        [abastecimento]="abastecimentoSelecionado"
+        (close)="fecharDetalhes()">
+      </app-detalhe-registro>
     </div>
   `
 })
 export class ConsultaComponent implements OnInit {
+  abastecimentoSelecionado: Abastecimento | null = null;
+
   constructor(public facade: ConsultaFacade) {}
 
   ngOnInit(): void {
     this.facade.loadAbastecimentos();
   }
 
-  aplicarFiltros(filtros: FiltrosConsulta): void {
-    this.facade.aplicarFiltro(filtros);
+  aplicarFiltros(filtros: FilAbastecimento): void {
+    this.abastecimentoSelecionado = abastecimento;
+  }
+
+  fecharDetalhes(): void {
+    this.abastecimentoSelecionado = null
   }
 
   mudarPagina(pagina: number): void {

@@ -1,6 +1,9 @@
 # Documentação PDF
 *.pdf
 
+# Revisão do projeto
+REVISAO_PROJETO.md
+
 # Dependências
 node_modules/
 npm-debug.log

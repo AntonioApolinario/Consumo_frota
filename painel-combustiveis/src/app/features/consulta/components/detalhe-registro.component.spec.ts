@@ -58,7 +58,7 @@ describe('DetalheRegistroComponent', () => {
   it('should mask CPF correctly', () => {
     const cpfMaskPipe = new CpfMaskPipe();
     const maskedCpf = cpfMaskPipe.transform('12345678901');
-    expect(maskedCpf).toBe('123.456.789-01');
+    expect(maskedCpf).toBe('***.456.789-**');
   });
 
   it('should mask placa correctly', () => {

@@ -12,11 +12,11 @@ describe('CpfMaskPipe', () => {
   });
 
   it('should format a valid CPF', () => {
-    expect(pipe.transform('12345678901')).toBe('123.456.789-01');
+    expect(pipe.transform('12345678901')).toBe('***.456.789-**');
   });
 
   it('should format CPF with non-numeric characters', () => {
-    expect(pipe.transform('123.456.789-01')).toBe('123.456.789-01');
+    expect(pipe.transform('123.456.789-01')).toBe('***.456.789-**');
   });
 
   it('should return empty string for null value', () => {
@@ -29,6 +29,6 @@ describe('CpfMaskPipe', () => {
   });
 
   it('should handle mixed alphanumeric input', () => {
-    expect(pipe.transform('abc12345678901xyz')).toBe('123.456.789-01');
+    expect(pipe.transform('abc12345678901xyz')).toBe('***.456.789-**');
   });
 });

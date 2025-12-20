@@ -5,6 +5,7 @@ import { Chart, ChartConfiguration, registerables } from 'chart.js';
 Chart.register(...registerables);
 
 type ViewMode = 'media' | 'maxima' | 'minima';
+type ZoomLevel = 'months' | 'weeks';
 
 @Component({
   selector: 'app-price-evolution-chart',
@@ -12,7 +13,15 @@ type ViewMode = 'media' | 'maxima' | 'minima';
   imports: [CommonModule],
   template: `
     <div class="bg-white rounded-lg shadow-md p-6">
-      <h3 class="text-h3 font-semibold text-gov-blue mb-4">Evolução de Preço</h3>
+      <div class="flex justify-between items-center mb-4">
+        <h3 class="text-h3 font-semibold text-gov-blue">
+          Evolução de Preço: <span class="text-xl font-medium text-gray-700">{{ getViewModeLabel() }}</span>
+        </h3>
+      </div>
+      
+      <p *ngIf="zoomLevel === 'weeks'" class="text-sm text-gray-600 mb-2 text-center font-semibold">
+        {{ selectedMonthName }}
+      </p>
       
       <!-- Botão superior -->
       <div class="flex justify-center mb-4">
@@ -31,7 +40,10 @@ type ViewMode = 'media' | 'maxima' | 'minima';
       </div>
       
       <!-- Canvas com animação -->
-      <div class="relative overflow-hidden" [class.slide-down]="isAnimating && animationDirection === 'down'" [class.slide-up]="isAnimating && animationDirection === 'up'">
+      <div class="relative overflow-hidden" 
+           [class.slide-down]="isAnimating && animationDirection === 'down'" 
+           [class.slide-up]="isAnimating && animationDirection === 'up'"
+           (mouseleave)="onMouseLeave()">
         <canvas #chartCanvas></canvas>
       </div>
       
@@ -90,10 +102,32 @@ export class PriceEvolutionChartComponent implements OnInit, OnChanges {
   
   private chart: Chart | null = null;
   currentView: ViewMode = 'media';
+  zoomLevel: ZoomLevel = 'months';
+  selectedMonthIndex: number = -1;
+  selectedMonthName: string = '';
   isAnimating = false;
   animationDirection: 'down' | 'up' = 'down';
   
-  // Dados históricos para os diferentes modos
+  private readonly monthLabels = ['Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov'];
+  private readonly monthNumbers = [6, 7, 8, 9, 10, 11]; // Junho a Novembro
+  
+  private generateWeekLabels(monthIndex: number): string[] {
+    const monthNumber = this.monthNumbers[monthIndex];
+    const year = 2025;
+    const weeks = [];
+    
+    // Gerar 4 segundas-feiras do mês (aproximadamente)
+    const startDays = [1, 8, 15, 22]; // Dias aproximados de segunda-feira
+    
+    for (const day of startDays) {
+      const date = `${day.toString().padStart(2, '0')}/${monthNumber.toString().padStart(2, '0')}`;
+      weeks.push(date);
+    }
+    
+    return weeks;
+  }
+  
+  // Dados históricos para os diferentes modos (visão mensal)
   private readonly historicalData = {
     media: {
       gasolina: [5.50, 5.65, 5.89, 5.75, 5.92, 5.89],
@@ -112,6 +146,28 @@ export class PriceEvolutionChartComponent implements OnInit, OnChanges {
     }
   };
 
+  // Dados diários para cada mês (simulando 4 semanas)
+  private generateWeeklyData(monthIndex: number, mode: ViewMode): any {
+    const baseGasolina = this.historicalData[mode].gasolina[monthIndex];
+    const baseDiesel = this.historicalData[mode].diesel[monthIndex];
+    const baseEtanol = this.historicalData[mode].etanol[monthIndex];
+    
+    const weeks = 4;
+    const gasolina = [];
+    const diesel = [];
+    const etanol = [];
+    
+    for (let i = 1; i <= weeks; i++) {
+      // Variação aleatória de ±5% do valor base
+      const variation = (Math.random() - 0.5) * 0.1;
+      gasolina.push(+(baseGasolina * (1 + variation)).toFixed(2));
+      diesel.push(+(baseDiesel * (1 + variation)).toFixed(2));
+      etanol.push(+(baseEtanol * (1 + variation)).toFixed(2));
+    }
+    
+    return { gasolina, diesel, etanol };
+  }
+
   ngOnInit(): void {
     this.createChart();
   }
@@ -120,6 +176,15 @@ export class PriceEvolutionChartComponent implements OnInit, OnChanges {
     if (this.chart) {
       this.updateChart();
     }
+  }
+
+  getViewModeLabel(): string {
+    const labels = {
+      'media': 'Média',
+      'maxima': 'Máxima',
+      'minima': 'Mínima'
+    };
+    return labels[this.currentView];
   }
 
   toggleView(mode: ViewMode): void {
@@ -138,12 +203,20 @@ export class PriceEvolutionChartComponent implements OnInit, OnChanges {
     this.isAnimating = true;
     this.currentView = mode;
     
-    // Atualizar dados do gráfico
+    // Atualizar dados do gráfico baseado no nível de zoom
     if (this.chart) {
-      const newData = this.historicalData[mode];
-      this.chart.data.datasets[0].data = newData.gasolina;
-      this.chart.data.datasets[1].data = newData.diesel;
-      this.chart.data.datasets[2].data = newData.etanol;
+      if (this.zoomLevel === 'months') {
+        const newData = this.historicalData[mode];
+        this.chart.data.datasets[0].data = newData.gasolina;
+        this.chart.data.datasets[1].data = newData.diesel;
+        this.chart.data.datasets[2].data = newData.etanol;
+      } else {
+        // Visão de semanas
+        const weeklyData = this.generateWeeklyData(this.selectedMonthIndex, mode);
+        this.chart.data.datasets[0].data = weeklyData.gasolina;
+        this.chart.data.datasets[1].data = weeklyData.diesel;
+        this.chart.data.datasets[2].data = weeklyData.etanol;
+      }
       this.chart.update('active');
     }
     
@@ -153,6 +226,50 @@ export class PriceEvolutionChartComponent implements OnInit, OnChanges {
     }, 600);
   }
 
+  onMouseLeave(): void {
+    if (this.zoomLevel === 'weeks') {
+      this.zoomOut();
+    }
+  }
+
+  zoomIn(monthIndex: number): void {
+    this.selectedMonthIndex = monthIndex;
+    this.selectedMonthName = this.monthLabels[monthIndex];
+    this.zoomLevel = 'weeks';
+    
+    if (this.chart) {
+      // Gerar labels com datas de segunda-feira
+      const weekLabels = this.generateWeekLabels(monthIndex);
+      this.chart.data.labels = weekLabels;
+      
+      // Atualizar dados
+      const weeklyData = this.generateWeeklyData(monthIndex, this.currentView);
+      this.chart.data.datasets[0].data = weeklyData.gasolina;
+      this.chart.data.datasets[1].data = weeklyData.diesel;
+      this.chart.data.datasets[2].data = weeklyData.etanol;
+      
+      this.chart.update('active');
+    }
+  }
+
+  zoomOut(): void {
+    this.zoomLevel = 'months';
+    this.selectedMonthIndex = -1;
+    
+    if (this.chart) {
+      // Restaurar labels dos meses
+      this.chart.data.labels = this.monthLabels;
+      
+      // Restaurar dados mensais
+      const monthlyData = this.historicalData[this.currentView];
+      this.chart.data.datasets[0].data = monthlyData.gasolina;
+      this.chart.data.datasets[1].data = monthlyData.diesel;
+      this.chart.data.datasets[2].data = monthlyData.etanol;
+      
+      this.chart.update('active');
+    }
+  }
+
   private createChart(): void {
     const ctx = this.chartCanvas.nativeElement.getContext('2d');
     if (!ctx) return;
@@ -160,7 +277,7 @@ export class PriceEvolutionChartComponent implements OnInit, OnChanges {
     const config: ChartConfiguration = {
       type: 'line',
       data: {
-        labels: ['Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov'],
+        labels: this.monthLabels,
         datasets: [
           {
             label: 'Gasolina',
@@ -198,6 +315,25 @@ export class PriceEvolutionChartComponent implements OnInit, OnChanges {
           duration: 750,
           easing: 'easeInOutQuart'
         },
+        onClick: (event, elements) => {
+          if (this.zoomLevel === 'months') {
+            const canvasElement = this.chart?.canvas;
+            if (!canvasElement) return;
+            
+            const rect = canvasElement.getBoundingClientRect();
+            const x = (event as any).x || (event as any).clientX;
+            const relativeX = x - rect.left;
+            
+            // Calcular qual mês foi clicado baseado na posição X
+            const chartWidth = rect.width;
+            const clickPercent = relativeX / chartWidth;
+            const monthIndex = Math.floor(clickPercent * this.monthLabels.length);
+            
+            if (monthIndex >= 0 && monthIndex < this.monthLabels.length) {
+              this.zoomIn(monthIndex);
+            }
+          }
+        },
         plugins: {
           legend: {
             position: 'top',
@@ -211,6 +347,18 @@ export class PriceEvolutionChartComponent implements OnInit, OnChanges {
           },
           title: {
             display: false
+          },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              title: (context) => {
+                if (this.zoomLevel === 'months') {
+                  return context[0].label + ' (Clique para ver semanas)';
+                }
+                return context[0].label;
+              }
+            }
           }
         },
         scales: {

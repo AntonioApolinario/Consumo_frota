@@ -33,12 +33,22 @@ import { CommonModule } from '@angular/common';
         <!-- Logo e Título -->
         <div class="flex items-center justify-between py-4">
           <div class="flex items-center gap-4">
-            <div class="w-12 h-12 bg-white rounded flex items-center justify-center" role="img" aria-label="Logotipo do Governo Federal">
-              <span class="text-gov-blue font-bold text-xl" aria-hidden="true">BR</span>
-            </div>
+            <!-- Logo customizável -->
+            @if (logoPath) {
+              <img [src]="logoPath" 
+                   alt="Logo da organização" 
+                   class="h-12 w-auto object-contain"
+                   role="img">
+            } @else {
+              <div class="w-12 h-12 bg-white rounded flex items-center justify-center" 
+                   role="img" 
+                   aria-label="Logotipo do Governo Federal">
+                <span class="text-gov-blue font-bold text-xl" aria-hidden="true">BR</span>
+              </div>
+            }
             <div>
-              <h1 class="text-xl font-bold">Governo Federal</h1>
-              <p class="text-sm">Painel Gerencial de Combustíveis</p>
+              <h1 class="text-xl font-bold" style="font-family: 'Montserrat', sans-serif;">Governo Federal</h1>
+              <p class="text-sm" style="font-family: 'Rawline', sans-serif;">Painel Gerencial de Combustíveis</p>
             </div>
           </div>
         </div>
@@ -48,6 +58,9 @@ import { CommonModule } from '@angular/common';
 })
 export class GovHeaderComponent {
   altoContraste = false;
+  
+  // Caminho para logo customizável - adicione sua logo em assets/images/logo.png
+  logoPath = '/assets/images/logo.png';
 
   toggleAltoContraste(): void {
     this.altoContraste = !this.altoContraste;

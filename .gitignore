@@ -1,7 +1,8 @@
 # Documentação PDF
 *.pdf
 
-# Revisão do projeto
+# Contexto para IA (não versionar)
+projeto.md
 REVISAO_PROJETO.md
 
 # Dependências

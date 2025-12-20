@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { LayoutComponent } from './layout';
+import { NotFoundComponent } from './shared/components/not-found.component';
 
 export const routes: Routes = [
   {
@@ -20,11 +21,15 @@ export const routes: Routes = [
         path: 'consulta',
         loadComponent: () => 
           import('./features/consulta/consulta.component').then(m => m.ConsultaComponent)
+      },
+      {
+        path: '404',
+        component: NotFoundComponent
       }
     ]
   },
   {
     path: '**',
-    redirectTo: 'dashboard'
+    redirectTo: '404'
   }
 ];

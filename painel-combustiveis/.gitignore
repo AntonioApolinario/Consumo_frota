@@ -43,3 +43,14 @@ Thumbs.db
 cypress/videos
 cypress/screenshots
 cypress/downloads
+
+# Documentação de desenvolvimento/processo (não versionar)
+ANALISE_COMPLETA_PDFs.md
+COMO_TESTAR_E2E.md
+REVISAO_PROJETO.md
+projeto.md
+
+# Arquivos temporários
+*.bak
+*.backup
+*.old

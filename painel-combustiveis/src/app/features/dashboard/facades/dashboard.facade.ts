@@ -129,10 +129,6 @@ export class DashboardFacade {
     this.currentLevelSubject.next(initialLevel);
   }
 
-  private handleOthersDrillDown(dataPoint: ChartDataPoint): void {
-    // Método removido - lógica agora está em drillDown()
-  }
-
   private calculateKpis(abastecimentos: Abastecimento[]): KpiData {
     const gasolina = abastecimentos.filter(a => a.tipoCombustivel === 'Gasolina');
     const diesel = abastecimentos.filter(a => a.tipoCombustivel === 'Diesel');

@@ -1,7 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { ApiService } from '../../../core';
-import { Abastecimento, ChartDataPoint, DrillDownLevel } from '../models/dashboard.models';
+import { 
+  Abastecimento, 
+  AbastecimentoBackend,
+  PaginatedResponse,
+  ChartDataPoint, 
+  DrillDownLevel 
+} from '../models/dashboard.models';
 
 // Mapeamento UF -> Região
 const UF_TO_REGION: { [key: string]: string } = {
@@ -25,8 +32,41 @@ const UF_TO_REGION: { [key: string]: string } = {
 export class DashboardService {
   constructor(private apiService: ApiService) {}
 
+  /**
+   * Busca abastecimentos do backend e transforma para o formato do frontend
+   */
   getAbastecimentos(): Observable<Abastecimento[]> {
-    return this.apiService.get<Abastecimento[]>('abastecimentos');
+    return this.apiService.get<PaginatedResponse<AbastecimentoBackend>>('abastecimentos').pipe(
+      map(response => {
+        if (!response.items || response.items.length === 0) {
+          return [];
+        }
+        return response.items.map(item => this.transformAbastecimento(item));
+      })
+    );
+  }
+
+  /**
+   * Transforma abastecimento do backend (snake_case) para frontend (camelCase)
+   */
+  private transformAbastecimento(backend: AbastecimentoBackend): Abastecimento {
+    const precoLitro = parseFloat(backend.preco_por_litro);
+    const litros = parseFloat(backend.volume_abastecido);
+    
+    return {
+      id: backend.id,
+      data: backend.data_hora,
+      posto: backend.posto.nome,
+      cidade: backend.posto.cidade,
+      uf: backend.posto.uf,
+      regiao: backend.posto.regiao,
+      tipoCombustivel: backend.tipo_combustivel,
+      valorLitro: precoLitro,
+      litros: litros,
+      totalPago: precoLitro * litros,
+      motorista: backend.motorista,
+      veiculo: backend.veiculo || { placa: 'N/A', modelo: 'N/A' }
+    };
   }
 
   /**

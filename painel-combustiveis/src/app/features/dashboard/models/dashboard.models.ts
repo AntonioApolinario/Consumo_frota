@@ -19,6 +19,35 @@ export interface Abastecimento {
   };
 }
 
+export interface PaginatedResponse<T> {
+  items: T[];
+  total: number;
+  pagina?: number;
+  limite?: number;
+}
+
+export interface AbastecimentoBackend {
+  id: number;
+  data_hora: string;
+  tipo_combustivel: string;
+  preco_por_litro: string;
+  volume_abastecido: string;
+  posto: {
+    nome: string;
+    cidade: string;
+    uf: string;
+    regiao: string;
+  };
+  motorista: {
+    nome: string;
+    cpf: string;
+  };
+  veiculo: {
+    placa: string;
+    modelo: string;
+  } | null;
+}
+
 export interface DrillDownLevel {
   type: 'regiao' | 'estado' | 'municipio';
   value: string;
